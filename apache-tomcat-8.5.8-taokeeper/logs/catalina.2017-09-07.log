@@ -1,0 +1,343 @@
+07-Sep-2017 09:45:00.041 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+07-Sep-2017 09:45:00.043 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+07-Sep-2017 09:45:00.044 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+07-Sep-2017 09:45:00.044 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+07-Sep-2017 09:45:00.044 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+07-Sep-2017 09:45:00.044 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Sep-2017 09:45:00.045 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+07-Sep-2017 09:45:00.045 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+07-Sep-2017 09:45:00.045 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Sep-2017 09:45:00.045 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:45:00.046 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:45:00.047 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Sep-2017 09:45:00.047 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Sep-2017 09:45:00.047 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\conf\logging.properties
+07-Sep-2017 09:45:00.047 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Sep-2017 09:45:00.048 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DconfigFilePath=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT\config\taokeeper-monitor-config.properties
+07-Sep-2017 09:45:00.052 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:45:00.055 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:45:00.058 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\temp
+07-Sep-2017 09:45:00.061 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+07-Sep-2017 09:45:00.063 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+07-Sep-2017 09:45:00.066 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+07-Sep-2017 09:45:00.503 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+07-Sep-2017 09:45:00.579 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:45:00.700 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 09:45:00.702 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:45:00.704 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 09:45:00.704 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 872 ms
+07-Sep-2017 09:45:00.723 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-Sep-2017 09:45:00.724 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+07-Sep-2017 09:45:00.730 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT
+07-Sep-2017 09:45:03.036 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Sep-2017 09:45:09.235 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT has finished in 8,504 ms
+07-Sep-2017 09:45:09.237 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8016]
+07-Sep-2017 09:45:09.243 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8010]
+07-Sep-2017 09:45:09.244 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 8537 ms
+07-Sep-2017 09:47:07.272 信息 [http-nio-8016-exec-1] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [1504603755,1504672450] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+07-Sep-2017 09:50:07.136 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:07.190 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:50:07.243 信息 [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-Sep-2017 09:50:07.290 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+07-Sep-2017 09:50:07.291 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperClusterMapDumpJob.run(ZooKeeperClusterMapDumpJob.java:26)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.293 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [pool-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.296 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.runable.ClientThroughputStatJob.run(ClientThroughputStatJob.java:96)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.301 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperALiveCheckerJob.run(ZooKeeperALiveCheckerJob.java:85)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.306 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperStatusCollectJob.run(ZooKeeperStatusCollectJob.java:92)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.309 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.HostPerformanceCollectTask.run(HostPerformanceCollectTask.java:82)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.312 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [pool-5-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:07.323 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:07.326 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:50:07.328 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:07.329 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:50:19.835 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+07-Sep-2017 09:50:19.838 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+07-Sep-2017 09:50:19.838 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+07-Sep-2017 09:50:19.839 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+07-Sep-2017 09:50:19.839 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+07-Sep-2017 09:50:19.839 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Sep-2017 09:50:19.839 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+07-Sep-2017 09:50:19.839 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+07-Sep-2017 09:50:19.840 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Sep-2017 09:50:19.840 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:50:19.841 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:50:19.841 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Sep-2017 09:50:19.841 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Sep-2017 09:50:19.842 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\conf\logging.properties
+07-Sep-2017 09:50:19.842 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Sep-2017 09:50:19.843 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DconfigFilePath=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT\config\taokeeper-monitor-config.properties
+07-Sep-2017 09:50:19.847 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:50:19.849 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:50:19.852 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\temp
+07-Sep-2017 09:50:19.855 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+07-Sep-2017 09:50:19.860 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+07-Sep-2017 09:50:19.863 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+07-Sep-2017 09:50:20.289 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+07-Sep-2017 09:50:20.367 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:20.493 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 09:50:20.495 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:50:20.497 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 09:50:20.497 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 885 ms
+07-Sep-2017 09:50:20.515 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-Sep-2017 09:50:20.515 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+07-Sep-2017 09:50:20.520 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT
+07-Sep-2017 09:50:22.794 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Sep-2017 09:50:29.018 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT has finished in 8,496 ms
+07-Sep-2017 09:50:29.022 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8016]
+07-Sep-2017 09:50:29.028 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8010]
+07-Sep-2017 09:50:29.030 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 8531 ms
+07-Sep-2017 09:50:34.482 信息 [http-nio-8016-exec-1] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [1504603755,1504672450; JSESSIONID=F13606B65DA96A6AC3D1AF0F59AA4546] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+07-Sep-2017 09:50:54.985 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:54.992 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:50:55.044 信息 [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-Sep-2017 09:50:55.096 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+07-Sep-2017 09:50:55.098 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperClusterMapDumpJob.run(ZooKeeperClusterMapDumpJob.java:26)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:55.099 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [pool-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:55.102 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.runable.ClientThroughputStatJob.run(ClientThroughputStatJob.java:96)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:55.105 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperALiveCheckerJob.run(ZooKeeperALiveCheckerJob.java:85)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:55.112 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperStatusCollectJob.run(ZooKeeperStatusCollectJob.java:92)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:55.115 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.HostPerformanceCollectTask.run(HostPerformanceCollectTask.java:82)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 09:50:55.122 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:55.124 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:50:55.126 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:50:55.127 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:58:00.020 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+07-Sep-2017 09:58:00.024 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+07-Sep-2017 09:58:00.024 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+07-Sep-2017 09:58:00.024 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+07-Sep-2017 09:58:00.024 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+07-Sep-2017 09:58:00.025 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Sep-2017 09:58:00.025 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+07-Sep-2017 09:58:00.025 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+07-Sep-2017 09:58:00.025 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Sep-2017 09:58:00.025 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:58:00.026 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:58:00.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Sep-2017 09:58:00.027 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Sep-2017 09:58:00.028 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\conf\logging.properties
+07-Sep-2017 09:58:00.028 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Sep-2017 09:58:00.028 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DconfigFilePath=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\taokeeper-monitor\config\taokeeper-monitor-config.properties
+07-Sep-2017 09:58:00.033 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:58:00.036 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 09:58:00.039 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\temp
+07-Sep-2017 09:58:00.042 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+07-Sep-2017 09:58:00.045 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+07-Sep-2017 09:58:00.047 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+07-Sep-2017 09:58:00.484 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+07-Sep-2017 09:58:00.565 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 09:58:00.691 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 09:58:00.694 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 09:58:00.696 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 09:58:00.697 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 905 ms
+07-Sep-2017 09:58:00.718 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-Sep-2017 09:58:00.719 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+07-Sep-2017 09:58:00.726 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\docs
+07-Sep-2017 09:58:00.895 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\docs has finished in 169 ms
+07-Sep-2017 09:58:00.896 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\examples
+07-Sep-2017 09:58:01.080 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\examples has finished in 184 ms
+07-Sep-2017 09:58:01.080 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\host-manager
+07-Sep-2017 09:58:01.101 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\host-manager has finished in 21 ms
+07-Sep-2017 09:58:01.101 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\manager
+07-Sep-2017 09:58:01.117 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\manager has finished in 16 ms
+07-Sep-2017 09:58:01.117 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT
+07-Sep-2017 09:58:01.139 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT has finished in 22 ms
+07-Sep-2017 09:58:01.140 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\taokeeper-monitor
+07-Sep-2017 09:58:03.247 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Sep-2017 09:58:09.387 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\taokeeper-monitor has finished in 8,247 ms
+07-Sep-2017 09:58:09.390 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8016]
+07-Sep-2017 09:58:09.398 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8010]
+07-Sep-2017 09:58:09.400 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 8701 ms
+07-Sep-2017 09:58:17.496 信息 [http-nio-8016-exec-1] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [1504603755,1504672450; JSESSIONID=F13606B65DA96A6AC3D1AF0F59AA4546] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+07-Sep-2017 10:05:45.035 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 10:05:45.091 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 10:05:45.143 信息 [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-Sep-2017 10:05:45.204 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [taokeeper-monitor] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+07-Sep-2017 10:05:45.205 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperClusterMapDumpJob.run(ZooKeeperClusterMapDumpJob.java:26)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.206 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [pool-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.209 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.runable.ClientThroughputStatJob.run(ClientThroughputStatJob.java:96)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.212 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperALiveCheckerJob.run(ZooKeeperALiveCheckerJob.java:85)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.218 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperStatusCollectJob.run(ZooKeeperStatusCollectJob.java:92)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.221 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.HostPerformanceCollectTask.run(HostPerformanceCollectTask.java:82)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.224 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [pool-5-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 10:05:45.231 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 10:05:45.234 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 10:05:45.237 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 10:05:45.238 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 10:05:56.136 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+07-Sep-2017 10:05:56.139 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+07-Sep-2017 10:05:56.139 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+07-Sep-2017 10:05:56.139 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+07-Sep-2017 10:05:56.139 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+07-Sep-2017 10:05:56.140 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Sep-2017 10:05:56.140 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+07-Sep-2017 10:05:56.140 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+07-Sep-2017 10:05:56.141 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Sep-2017 10:05:56.141 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 10:05:56.142 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 10:05:56.142 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DconfigFilePath=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\taokeeper-monitor\config\taokeeper-monitor-config.properties
+07-Sep-2017 10:05:56.143 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Sep-2017 10:05:56.143 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Sep-2017 10:05:56.143 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\conf\logging.properties
+07-Sep-2017 10:05:56.147 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Sep-2017 10:05:56.149 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 10:05:56.152 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+07-Sep-2017 10:05:56.155 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\temp
+07-Sep-2017 10:05:56.158 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+07-Sep-2017 10:05:56.164 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+07-Sep-2017 10:05:56.166 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+07-Sep-2017 10:05:56.606 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+07-Sep-2017 10:05:56.687 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 10:05:56.820 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 10:05:56.822 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 10:05:56.824 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Sep-2017 10:05:56.824 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 906 ms
+07-Sep-2017 10:05:56.844 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-Sep-2017 10:05:56.845 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+07-Sep-2017 10:05:56.851 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\docs
+07-Sep-2017 10:05:57.031 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\docs has finished in 181 ms
+07-Sep-2017 10:05:57.032 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\examples
+07-Sep-2017 10:05:57.203 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\examples has finished in 171 ms
+07-Sep-2017 10:05:57.204 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\host-manager
+07-Sep-2017 10:05:57.222 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\host-manager has finished in 18 ms
+07-Sep-2017 10:05:57.222 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\manager
+07-Sep-2017 10:05:57.239 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\manager has finished in 17 ms
+07-Sep-2017 10:05:57.240 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT
+07-Sep-2017 10:05:57.261 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT has finished in 21 ms
+07-Sep-2017 10:05:57.262 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\taokeeper-monitor
+07-Sep-2017 10:05:59.388 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Sep-2017 10:06:05.576 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\taokeeper-monitor has finished in 8,314 ms
+07-Sep-2017 10:06:05.579 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8016]
+07-Sep-2017 10:06:05.590 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8010]
+07-Sep-2017 10:06:05.592 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 8766 ms
+07-Sep-2017 10:06:10.967 信息 [http-nio-8016-exec-1] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [1504603755,1504672450; JSESSIONID=F13606B65DA96A6AC3D1AF0F59AA4546] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+07-Sep-2017 15:47:59.943 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 15:48:00.000 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 15:48:00.052 信息 [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-Sep-2017 15:48:00.116 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [taokeeper-monitor] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+07-Sep-2017 15:48:00.117 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperClusterMapDumpJob.run(ZooKeeperClusterMapDumpJob.java:26)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.117 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [pool-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.118 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.runable.ClientThroughputStatJob.run(ClientThroughputStatJob.java:96)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.119 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperALiveCheckerJob.run(ZooKeeperALiveCheckerJob.java:85)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.120 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperStatusCollectJob.run(ZooKeeperStatusCollectJob.java:92)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.120 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.HostPerformanceCollectTask.run(HostPerformanceCollectTask.java:82)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.121 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [taokeeper-monitor] appears to have started a thread named [pool-5-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+07-Sep-2017 15:48:00.131 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 15:48:00.133 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8010"]
+07-Sep-2017 15:48:00.134 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8016"]
+07-Sep-2017 15:48:00.135 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8010"]

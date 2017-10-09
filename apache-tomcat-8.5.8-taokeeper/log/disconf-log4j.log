@@ -1,0 +1,307 @@
+2017-09-06 10:19:11,351 [localhost-startStop-1] INFO  context.ContextLoader (ContextLoader.java:285)     - Root WebApplicationContext: initialization started
+2017-09-06 10:19:11,444 [localhost-startStop-1] INFO  support.XmlWebApplicationContext (AbstractApplicationContext.java:510)     - Refreshing Root WebApplicationContext: startup date [Wed Sep 06 10:19:11 CST 2017]; root of context hierarchy
+2017-09-06 10:19:11,476 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/applicationContext.xml]
+2017-09-06 10:19:11,881 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/spring-servlet-validator.xml]
+2017-09-06 10:19:11,897 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/spring-servlet-interceptor.xml]
+2017-09-06 10:19:11,912 [localhost-startStop-1] INFO  support.DefaultListableBeanFactory (DefaultListableBeanFactory.java:822)     - Overriding bean definition for bean 'applicationPropertyConfig': replacing [Generic bean: class [com.baidu.disconf.web.config.ApplicationPropertyConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [G:\app_server\apache-tomcat-8.5.8\webapps\ROOT\WEB-INF\classes\com\baidu\disconf\web\config\ApplicationPropertyConfig.class]] with [Generic bean: class [com.baidu.disconf.web.config.ApplicationPropertyConfig]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/applicationContext.xml]]
+2017-09-06 10:19:11,912 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/applicationContext-cache.xml]
+2017-09-06 10:19:11,928 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/applicationContext-springcache.xml]
+2017-09-06 10:19:11,975 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/applicationContext-dbconfig.xml]
+2017-09-06 10:19:12,178 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/jdbc-mysql.properties]
+2017-09-06 10:19:12,178 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/application.properties]
+2017-09-06 10:19:12,178 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/zoo.properties]
+2017-09-06 10:19:12,193 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/redis-config.properties]
+2017-09-06 10:19:12,193 [localhost-startStop-1] INFO  support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/spring-cache.properties]
+2017-09-06 10:19:12,240 [localhost-startStop-1] INFO  concurrent.ThreadPoolTaskExecutor (ExecutorConfigurationSupport.java:165)     - Initializing ExecutorService 
+2017-09-06 10:19:12,240 [localhost-startStop-1] INFO  support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker (PostProcessorRegistrationDelegate.java:309)     - Bean 'proExecutor' of type [class org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 10:19:12,240 [localhost-startStop-1] INFO  support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker (PostProcessorRegistrationDelegate.java:309)     - Bean 'proExecutor' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 10:19:12,256 [localhost-startStop-1] INFO  concurrent.ThreadPoolTaskScheduler (ExecutorConfigurationSupport.java:165)     - Initializing ExecutorService  'proScheduler'
+2017-09-06 10:19:12,256 [localhost-startStop-1] INFO  support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker (PostProcessorRegistrationDelegate.java:309)     - Bean 'proScheduler' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 10:19:12,770 [localhost-startStop-1] INFO  log.MLog          (    MLog.java:80)     - MLog clients using log4j logging.
+2017-09-06 10:19:12,786 [localhost-startStop-1] INFO  c3p0.C3P0Registry (C3P0Registry.java:204)     - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-09-06 10:19:13,129 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/app],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.app.controller.AppController.create(com.baidu.disconf.web.service.app.form.AppNewForm)
+2017-09-06 10:19:13,129 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/app/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.app.controller.AppController.list()
+2017-09-06 10:19:13,129 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/session],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.get()
+2017-09-06 10:19:13,129 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/password],methods=[PUT]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.password(com.baidu.disconf.web.service.user.form.PasswordModifyForm,javax.servlet.http.HttpServletRequest)
+2017-09-06 10:19:13,129 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/signin],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.signin(com.baidu.disconf.web.service.sign.form.SigninForm,javax.servlet.http.HttpServletRequest)
+2017-09-06 10:19:13,145 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/signout],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.signout(javax.servlet.http.HttpServletRequest)
+2017-09-06 10:19:13,145 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/file],methods=[GET]}" onto public org.springframework.http.HttpEntity<byte[]> com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getFile(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:19:13,145 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/item],methods=[GET]}" onto public com.baidu.disconf.core.common.json.ValueVo com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getItem(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:19:13,145 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getList(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:19:13,145 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/simple/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getSimpleList(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:19:13,160 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/filetext],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigNewController.updateFileWithText(com.baidu.disconf.web.service.config.form.ConfNewForm,java.lang.String,java.lang.String)
+2017-09-06 10:19:13,160 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/file],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigNewController.updateFile(com.baidu.disconf.web.service.config.form.ConfNewForm,org.springframework.web.multipart.MultipartFile)
+2017-09-06 10:19:13,160 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/item],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigNewController.newItem(com.baidu.disconf.web.service.config.form.ConfNewItemForm)
+2017-09-06 10:19:13,160 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/{configId}],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getConfig(long)
+2017-09-06 10:19:13,160 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/simple/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getSimpleConfigList(com.baidu.disconf.web.service.config.form.ConfListForm)
+2017-09-06 10:19:13,176 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getConfigList(com.baidu.disconf.web.service.config.form.ConfListForm)
+2017-09-06 10:19:13,176 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/download/{configId}],methods=[GET]}" onto public org.springframework.http.HttpEntity<byte[]> com.baidu.disconf.web.web.config.controller.ConfigReadController.downloadDspBill(long)
+2017-09-06 10:19:13,176 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/zk/{configId}],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getZkInfo(long)
+2017-09-06 10:19:13,176 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/versionlist],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getVersionList(com.baidu.disconf.web.service.config.form.VersionListForm)
+2017-09-06 10:19:13,176 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/downloadfilebatch],methods=[GET]}" onto public org.springframework.http.HttpEntity<byte[]> com.baidu.disconf.web.web.config.controller.ConfigReadController.download2(com.baidu.disconf.web.service.config.form.ConfListForm)
+2017-09-06 10:19:13,192 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/{configId}],methods=[DELETE]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.delete(long)
+2017-09-06 10:19:13,192 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/filetext/{configId}],methods=[PUT]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.updateFileWithText(long,java.lang.String)
+2017-09-06 10:19:13,192 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/file/{configId}],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.updateFile(long,org.springframework.web.multipart.MultipartFile)
+2017-09-06 10:19:13,192 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/item/{configId}],methods=[PUT]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.updateItem(long,java.lang.String)
+2017-09-06 10:19:13,192 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/env/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.env.controller.EnvController.list()
+2017-09-06 10:19:13,207 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/zoo/zkdeploy],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.zookeeper.controller.ZooController.getZkDeployInfo(com.baidu.disconf.web.service.zookeeper.form.ZkDeployForm)
+2017-09-06 10:19:13,207 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/zoo/hosts],methods=[GET]}" onto public com.baidu.disconf.core.common.json.ValueVo com.baidu.disconf.web.web.zookeeper.controller.ZooController.getHosts()
+2017-09-06 10:19:13,207 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/zoo/prefix],methods=[GET]}" onto public com.baidu.disconf.core.common.json.ValueVo com.baidu.disconf.web.web.zookeeper.controller.ZooController.getPrefixUrl()
+2017-09-06 10:19:13,270 [localhost-startStop-1] INFO  util.Version      ( Version.java:27)     - HV000001: Hibernate Validator 5.0.1.Final
+2017-09-06 10:19:13,613 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:517)     - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Sep 06 10:19:11 CST 2017]; root of context hierarchy
+2017-09-06 10:19:13,660 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:517)     - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Sep 06 10:19:11 CST 2017]; root of context hierarchy
+2017-09-06 10:19:15,032 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 10:19:16,203 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 10:21:05,331 [localhost-startStop-1] INFO  context.ContextLoader (ContextLoader.java:285)     - Root WebApplicationContext: initialization started
+2017-09-06 10:21:05,394 [localhost-startStop-1] INFO  support.XmlWebApplicationContext (AbstractApplicationContext.java:510)     - Refreshing Root WebApplicationContext: startup date [Wed Sep 06 10:21:05 CST 2017]; root of context hierarchy
+2017-09-06 10:21:05,425 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/applicationContext.xml]
+2017-09-06 10:21:05,721 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/spring-servlet-validator.xml]
+2017-09-06 10:21:05,737 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/spring-servlet-interceptor.xml]
+2017-09-06 10:21:05,752 [localhost-startStop-1] INFO  support.DefaultListableBeanFactory (DefaultListableBeanFactory.java:822)     - Overriding bean definition for bean 'applicationPropertyConfig': replacing [Generic bean: class [com.baidu.disconf.web.config.ApplicationPropertyConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [G:\app_server\apache-tomcat-8.5.8\webapps\ROOT\WEB-INF\classes\com\baidu\disconf\web\config\ApplicationPropertyConfig.class]] with [Generic bean: class [com.baidu.disconf.web.config.ApplicationPropertyConfig]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/applicationContext.xml]]
+2017-09-06 10:21:05,768 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/applicationContext-cache.xml]
+2017-09-06 10:21:05,784 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/applicationContext-springcache.xml]
+2017-09-06 10:21:05,815 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/myconfig/applicationContext-dbconfig.xml]
+2017-09-06 10:21:06,002 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/jdbc-mysql.properties]
+2017-09-06 10:21:06,002 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/application.properties]
+2017-09-06 10:21:06,002 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/zoo.properties]
+2017-09-06 10:21:06,018 [localhost-startStop-1] INFO  config.PropertyPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/redis-config.properties]
+2017-09-06 10:21:06,018 [localhost-startStop-1] INFO  support.PropertySourcesPlaceholderConfigurer (PropertiesLoaderSupport.java:172)     - Loading properties file from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/spring-cache.properties]
+2017-09-06 10:21:06,064 [localhost-startStop-1] INFO  concurrent.ThreadPoolTaskExecutor (ExecutorConfigurationSupport.java:165)     - Initializing ExecutorService 
+2017-09-06 10:21:06,064 [localhost-startStop-1] INFO  support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker (PostProcessorRegistrationDelegate.java:309)     - Bean 'proExecutor' of type [class org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 10:21:06,064 [localhost-startStop-1] INFO  support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker (PostProcessorRegistrationDelegate.java:309)     - Bean 'proExecutor' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 10:21:06,080 [localhost-startStop-1] INFO  concurrent.ThreadPoolTaskScheduler (ExecutorConfigurationSupport.java:165)     - Initializing ExecutorService  'proScheduler'
+2017-09-06 10:21:06,080 [localhost-startStop-1] INFO  support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker (PostProcessorRegistrationDelegate.java:309)     - Bean 'proScheduler' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 10:21:06,439 [localhost-startStop-1] INFO  log.MLog          (    MLog.java:80)     - MLog clients using log4j logging.
+2017-09-06 10:21:06,454 [localhost-startStop-1] INFO  c3p0.C3P0Registry (C3P0Registry.java:204)     - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-09-06 10:21:06,813 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/app],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.app.controller.AppController.create(com.baidu.disconf.web.service.app.form.AppNewForm)
+2017-09-06 10:21:06,813 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/app/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.app.controller.AppController.list()
+2017-09-06 10:21:06,813 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/session],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.get()
+2017-09-06 10:21:06,813 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/password],methods=[PUT]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.password(com.baidu.disconf.web.service.user.form.PasswordModifyForm,javax.servlet.http.HttpServletRequest)
+2017-09-06 10:21:06,828 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/signin],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.signin(com.baidu.disconf.web.service.sign.form.SigninForm,javax.servlet.http.HttpServletRequest)
+2017-09-06 10:21:06,828 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/account/signout],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.auth.UserController.signout(javax.servlet.http.HttpServletRequest)
+2017-09-06 10:21:06,828 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/file],methods=[GET]}" onto public org.springframework.http.HttpEntity<byte[]> com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getFile(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:21:06,828 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/item],methods=[GET]}" onto public com.baidu.disconf.core.common.json.ValueVo com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getItem(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:21:06,828 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getList(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:21:06,844 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/config/simple/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigFetcherController.getSimpleList(com.baidu.disconf.web.service.config.form.ConfForm)
+2017-09-06 10:21:06,844 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/filetext],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigNewController.updateFileWithText(com.baidu.disconf.web.service.config.form.ConfNewForm,java.lang.String,java.lang.String)
+2017-09-06 10:21:06,844 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/file],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigNewController.updateFile(com.baidu.disconf.web.service.config.form.ConfNewForm,org.springframework.web.multipart.MultipartFile)
+2017-09-06 10:21:06,844 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/item],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigNewController.newItem(com.baidu.disconf.web.service.config.form.ConfNewItemForm)
+2017-09-06 10:21:06,844 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/simple/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getSimpleConfigList(com.baidu.disconf.web.service.config.form.ConfListForm)
+2017-09-06 10:21:06,859 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getConfigList(com.baidu.disconf.web.service.config.form.ConfListForm)
+2017-09-06 10:21:06,859 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/download/{configId}],methods=[GET]}" onto public org.springframework.http.HttpEntity<byte[]> com.baidu.disconf.web.web.config.controller.ConfigReadController.downloadDspBill(long)
+2017-09-06 10:21:06,859 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/zk/{configId}],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getZkInfo(long)
+2017-09-06 10:21:06,859 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/versionlist],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getVersionList(com.baidu.disconf.web.service.config.form.VersionListForm)
+2017-09-06 10:21:06,859 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/downloadfilebatch],methods=[GET]}" onto public org.springframework.http.HttpEntity<byte[]> com.baidu.disconf.web.web.config.controller.ConfigReadController.download2(com.baidu.disconf.web.service.config.form.ConfListForm)
+2017-09-06 10:21:06,875 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/{configId}],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigReadController.getConfig(long)
+2017-09-06 10:21:06,875 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/{configId}],methods=[DELETE]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.delete(long)
+2017-09-06 10:21:06,875 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/filetext/{configId}],methods=[PUT]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.updateFileWithText(long,java.lang.String)
+2017-09-06 10:21:06,875 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/file/{configId}],methods=[POST]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.updateFile(long,org.springframework.web.multipart.MultipartFile)
+2017-09-06 10:21:06,875 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/web/config/item/{configId}],methods=[PUT]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.config.controller.ConfigUpdateController.updateItem(long,java.lang.String)
+2017-09-06 10:21:06,891 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/env/list],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.env.controller.EnvController.list()
+2017-09-06 10:21:06,891 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/zoo/zkdeploy],methods=[GET]}" onto public com.baidu.dsp.common.vo.JsonObjectBase com.baidu.disconf.web.web.zookeeper.controller.ZooController.getZkDeployInfo(com.baidu.disconf.web.service.zookeeper.form.ZkDeployForm)
+2017-09-06 10:21:06,891 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/zoo/hosts],methods=[GET]}" onto public com.baidu.disconf.core.common.json.ValueVo com.baidu.disconf.web.web.zookeeper.controller.ZooController.getHosts()
+2017-09-06 10:21:06,891 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerMapping (AbstractHandlerMethodMapping.java:217)     - Mapped "{[/api/zoo/prefix],methods=[GET]}" onto public com.baidu.disconf.core.common.json.ValueVo com.baidu.disconf.web.web.zookeeper.controller.ZooController.getPrefixUrl()
+2017-09-06 10:21:06,937 [localhost-startStop-1] INFO  util.Version      ( Version.java:27)     - HV000001: Hibernate Validator 5.0.1.Final
+2017-09-06 10:21:07,312 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:517)     - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Sep 06 10:21:05 CST 2017]; root of context hierarchy
+2017-09-06 10:21:07,374 [localhost-startStop-1] INFO  annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:517)     - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Sep 06 10:21:05 CST 2017]; root of context hierarchy
+2017-09-06 10:21:07,733 [localhost-startStop-1] INFO  ehcache.EhCacheManagerFactoryBean (EhCacheManagerFactoryBean.java:129)     - Initializing EhCache CacheManager
+2017-09-06 10:21:08,061 [localhost-startStop-1] INFO  context.ContextLoader (ContextLoader.java:325)     - Root WebApplicationContext: initialization completed in 2730 ms
+2017-09-06 10:21:08,092 [localhost-startStop-1] INFO  servlet.DispatcherServlet (FrameworkServlet.java:485)     - FrameworkServlet 'spring': initialization started
+2017-09-06 10:21:08,092 [localhost-startStop-1] INFO  support.XmlWebApplicationContext (AbstractApplicationContext.java:510)     - Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Sep 06 10:21:08 CST 2017]; parent: Root WebApplicationContext
+2017-09-06 10:21:08,092 [localhost-startStop-1] INFO  xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317)     - Loading XML bean definitions from URL [file:/G:/app_server/apache-tomcat-8.5.8/webapps/ROOT/WEB-INF/classes/spring-servlet.xml]
+2017-09-06 10:21:08,170 [localhost-startStop-1] INFO  freemarker.SpringTemplateLoader (SpringTemplateLoader.java:61)     - SpringTemplateLoader for FreeMarker: using resource loader [WebApplicationContext for namespace 'spring-servlet': startup date [Wed Sep 06 10:21:08 CST 2017]; parent: Root WebApplicationContext] and template loader path [/WEB-INF/freemarker/]
+2017-09-06 10:21:08,170 [localhost-startStop-1] INFO  freemarker.FreeMarkerConfigurer (FreeMarkerConfigurer.java:127)     - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-09-06 10:21:08,201 [localhost-startStop-1] INFO  servlet.DispatcherServlet (FrameworkServlet.java:504)     - FrameworkServlet 'spring': initialization completed in 109 ms
+2017-09-06 10:21:11,649 [http-nio-8015-exec-1] INFO  impl.AbstractPoolBackedDataSource (AbstractPoolBackedDataSource.java:462)     - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda99qnky9ee1nt0rcc|106a5817, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda99qnky9ee1nt0rcc|106a5817, idleConnectionTestPeriod -> 1200, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/disconf?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-09-06 11:00:25,765 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:28,685 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:31,101 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:46,035 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server static.vacomall.com/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxn$SendThread.doIO(ClientCnxn.java:856)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1154)
+2017-09-06 11:00:48,909 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:50,979 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:54,052 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:55,894 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:57,304 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:00:59,659 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:01,013 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:02,682 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:05,429 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:07,318 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:09,321 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:11,923 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:13,314 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:15,260 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:17,445 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:19,190 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:20,641 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:22,848 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:24,097 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:25,786 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:28,152 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:29,322 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:30,915 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:33,888 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:35,602 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:36,939 [localhost-startStop-1-SendThread(static.vacomall.com:2181)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:39,286 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:41,158 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:44,174 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:45,490 [localhost-startStop-1-SendThread(static.vacomall.com:2182)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:48,422 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)
+2017-09-06 11:01:51,408 [localhost-startStop-1-SendThread(static.vacomall.com:2183)] WARN  zookeeper.ClientCnxn (ClientCnxn.java:1185)     - Session 0x35e54fcc3170000 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1143)

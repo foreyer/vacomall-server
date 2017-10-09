@@ -1,0 +1,551 @@
+ 2017-09-28 10:26:21,112 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener start...
+ 2017-09-28 10:26:21,112 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener end...
+ 2017-09-28 10:26:23,000 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis1> <server: 127.0.0.1:6379> object created. Connection pool will be initiated when calling.
+ 2017-09-28 10:26:23,031 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis2> <server: 127.0.0.1:6380> object created. Connection pool will be initiated when calling.
+ 2017-09-28 10:26:23,951 [localhost-startStop-1-EventThread] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk SyncConnected
+ 2017-09-28 10:26:23,951 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zookeeper: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 , connected.
+ 2017-09-28 10:26:23,951 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.ZookeeperMgr - zoo prefix: /disconf
+ 2017-09-28 10:26:24,357 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.ContextListener - start to load ContextListener
+ 2017-09-28 10:26:24,357 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.ContextListener - end of ContextListener
+3e03419a-5f2c-46fa-b2e8-eadd26716e18 2017-09-28 10:26:34,669 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+3e03419a-5f2c-46fa-b2e8-eadd26716e18 2017-09-28 10:26:34,701 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+9eb9e3ca-f01d-4f3f-bee4-e05e20fa4943 2017-09-28 10:26:50,461 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+cfaa313c-8fe0-4d8c-ad5b-c2a000bed828 2017-09-28 10:26:50,618 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+f38fcfb0-b9e1-447e-9e0f-22efc2b29257 2017-09-28 10:26:51,025 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+6017e998-f3cd-4fab-b05c-bb0aea54fb1c 2017-09-28 10:26:51,196 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+b3d2490a-e818-43e5-8842-f0eed8312c44 2017-09-28 10:27:09,438 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+b3d2490a-e818-43e5-8842-f0eed8312c44 2017-09-28 10:27:09,475 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={global=请登录系统}, sessionId=b3d2490a-e818-43e5-8842-f0eed8312c44, success=false]
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:12,935 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:12,956 [http-nio-8015-exec-6] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$3 - [[RedisCache:GET] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis2> <server: 127.0.0.1:6380> fail. Could not get a resource from the pool! (use 19 ms)
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:12,957 [http-nio-8015-exec-6] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$3 - [[RedisCache:GET] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis1> <server: 127.0.0.1:6379> fail. Could not get a resource from the pool! (use 1 ms)
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:12,958 [http-nio-8015-exec-6] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$3 - [[RedisCache:GET] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis2> <server: 127.0.0.1:6380> fail. Could not get a resource from the pool! (use 0 ms)
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:12,959 [http-nio-8015-exec-6] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$3 - [[RedisCache:GET] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis1> <server: 127.0.0.1:6379> fail. Could not get a resource from the pool! (use 0 ms)
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:12,964 [http-nio-8015-exec-6] ERROR com.github.knightliao.apollo.redis.RedisCacheManager - Return null because exception occurs: Could not get a resource from the pool@127.0.0.1:6379
+com.github.knightliao.apollo.redis.exception.RedisOperationException: Could not get a resource from the pool@127.0.0.1:6379
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:72) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.get(RedisCacheManager.java:249) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.isLogin(RedisLoginImpl.java:47) [classes/:na]
+	at com.baidu.dsp.common.interceptor.login.LoginInterceptor.preHandle(LoginInterceptor.java:108) [classes/:na]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:954) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:858) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.get(RedisClient.java:213) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$3.doOperation(RedisCacheManager.java:251) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) ~[apollo-1.0.14.jar:na]
+	... 42 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 45 common frames omitted
+4dfacab5-f180-42ae-a146-fd3993cc342b 2017-09-28 10:27:13,018 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={global=请登录系统}, sessionId=4dfacab5-f180-42ae-a146-fd3993cc342b, success=false]
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:13,768 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/signin
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:13,987 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.auth.UserController - com.baidu.disconf.web.service.sign.form.SigninForm@3e0f0deb
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,009 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$1ffa042a.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,048 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis2> <server: 127.0.0.1:6380> fail. Could not get a resource from the pool! (use 41 ms)
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,050 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$1ffa042a.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,103 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis1> <server: 127.0.0.1:6379> fail. Could not get a resource from the pool! (use 55 ms)
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,107 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$1ffa042a.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,151 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis1> <server: 127.0.0.1:6379> fail. Could not get a resource from the pool! (use 46 ms)
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,153 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$1ffa042a.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,191 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:77c67291-7e56-4e29-9771-6df40a0fd70euser_key> <client: BeidouRedis2> <server: 127.0.0.1:6380> fail. Could not get a resource from the pool! (use 39 ms)
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,193 [http-nio-8015-exec-7] ERROR com.github.knightliao.apollo.redis.RedisCacheManager - Return null because exception occurs: Could not get a resource from the pool@127.0.0.1:6380
+com.github.knightliao.apollo.redis.exception.RedisOperationException: Could not get a resource from the pool@127.0.0.1:6380
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:72) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$1ffa042a.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) ~[apollo-1.0.14.jar:na]
+	... 60 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+40507f71-730e-42a5-8887-5ec33f840f15 2017-09-28 10:27:14,235 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+94c10768-cd68-4bb0-b551-e1e8e53a0b7e 2017-09-28 10:27:14,292 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+94c10768-cd68-4bb0-b551-e1e8e53a0b7e 2017-09-28 10:27:14,293 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+25eb5cb2-576a-4bac-a5fb-3bc6b93d78be 2017-09-28 10:27:14,303 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+142af54d-43fd-4370-8acc-f726d3f0c67d 2017-09-28 10:27:14,303 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+142af54d-43fd-4370-8acc-f726d3f0c67d 2017-09-28 10:27:14,315 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.impl.RoleResourceMgrImpl - Querying role_resource table to get all...
+25eb5cb2-576a-4bac-a5fb-3bc6b93d78be 2017-09-28 10:27:14,315 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.impl.RoleResourceMgrImpl - Querying role_resource table to get all...
+25eb5cb2-576a-4bac-a5fb-3bc6b93d78be 2017-09-28 10:27:14,323 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+142af54d-43fd-4370-8acc-f726d3f0c67d 2017-09-28 10:27:14,323 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+142af54d-43fd-4370-8acc-f726d3f0c67d 2017-09-28 10:27:14,340 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=142af54d-43fd-4370-8acc-f726d3f0c67d, success=true]
+25eb5cb2-576a-4bac-a5fb-3bc6b93d78be 2017-09-28 10:27:14,348 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=25eb5cb2-576a-4bac-a5fb-3bc6b93d78be, success=true]
+3c627040-5b23-4ea7-9427-daec63f971c0 2017-09-28 10:27:15,478 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+3c627040-5b23-4ea7-9427-daec63f971c0 2017-09-28 10:27:15,501 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+3c627040-5b23-4ea7-9427-daec63f971c0 2017-09-28 10:27:15,507 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=-1, envId=1]
+3c627040-5b23-4ea7-9427-daec63f971c0 2017-09-28 10:27:15,509 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=3c627040-5b23-4ea7-9427-daec63f971c0, success=true]
+116ced35-e15a-417d-a7c6-0f3f0e389550 2017-09-28 10:27:16,869 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+116ced35-e15a-417d-a7c6-0f3f0e389550 2017-09-28 10:27:16,878 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+116ced35-e15a-417d-a7c6-0f3f0e389550 2017-09-28 10:27:16,880 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=1]
+116ced35-e15a-417d-a7c6-0f3f0e389550 2017-09-28 10:27:16,883 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=116ced35-e15a-417d-a7c6-0f3f0e389550, success=true]
+1b49283c-4332-4686-ac0f-47f963c533b4 2017-09-28 10:27:16,894 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+1b49283c-4332-4686-ac0f-47f963c533b4 2017-09-28 10:27:16,934 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=1b49283c-4332-4686-ac0f-47f963c533b4, success=false]
+f82c2b94-538e-409f-ac3f-a81d3cf67c92 2017-09-28 10:27:18,207 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+f82c2b94-538e-409f-ac3f-a81d3cf67c92 2017-09-28 10:27:18,214 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+f82c2b94-538e-409f-ac3f-a81d3cf67c92 2017-09-28 10:27:18,215 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+f82c2b94-538e-409f-ac3f-a81d3cf67c92 2017-09-28 10:27:18,225 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=f82c2b94-538e-409f-ac3f-a81d3cf67c92, success=true]
+345446cc-e2c5-48d5-a248-3bea7fec71b6 2017-09-28 10:27:18,244 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+345446cc-e2c5-48d5-a248-3bea7fec71b6 2017-09-28 10:27:18,246 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+345446cc-e2c5-48d5-a248-3bea7fec71b6 2017-09-28 10:27:18,247 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+345446cc-e2c5-48d5-a248-3bea7fec71b6 2017-09-28 10:27:18,324 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=345446cc-e2c5-48d5-a248-3bea7fec71b6, success=true]
+1b3d2d17-4367-43c8-88af-5a57408cabb7 2017-09-28 10:27:33,001 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+64216141-6e98-4fba-97da-799d18c3e9e2 2017-09-28 10:27:33,050 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+7e448ceb-c356-4783-afa8-ba4964f228f5 2017-09-28 10:27:33,239 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+729b408a-d48b-4c17-aaa4-eaebf05c0249 2017-09-28 10:27:33,365 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+c7bad6f2-6670-46ac-bdcd-aff9215aad5d 2017-09-28 10:27:42,967 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+264d06a0-f886-4a4c-8902-87bc2251904f 2017-09-28 10:27:43,034 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+b582ecc7-6dc5-4aef-90b8-6438fe336b04 2017-09-28 10:27:43,258 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+1ff52bab-8f03-4313-9cca-fd953aa2383f 2017-09-28 10:27:43,349 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+9fa2e7a4-1459-47af-9b78-95a28ef362d9 2017-09-28 10:35:22,169 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+a60a3920-c75b-470b-89d8-25e2eef72c21 2017-09-28 10:35:22,170 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+e81f8fc5-bc11-47ae-ba77-302780f73b23 2017-09-28 10:35:22,169 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+e81f8fc5-bc11-47ae-ba77-302780f73b23 2017-09-28 10:35:22,173 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+a60a3920-c75b-470b-89d8-25e2eef72c21 2017-09-28 10:35:22,173 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+e81f8fc5-bc11-47ae-ba77-302780f73b23 2017-09-28 10:35:22,177 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=e81f8fc5-bc11-47ae-ba77-302780f73b23, success=true]
+9fa2e7a4-1459-47af-9b78-95a28ef362d9 2017-09-28 10:35:22,172 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+a60a3920-c75b-470b-89d8-25e2eef72c21 2017-09-28 10:35:22,177 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=a60a3920-c75b-470b-89d8-25e2eef72c21, success=true]
+66d827fc-d5ef-4343-8d07-1a754e32849c 2017-09-28 10:56:44,753 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+66d827fc-d5ef-4343-8d07-1a754e32849c 2017-09-28 10:56:44,766 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+94a70d5f-aef0-4c3d-959d-8b359e2849c4 2017-09-28 11:26:54,807 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+94a70d5f-aef0-4c3d-959d-8b359e2849c4 2017-09-28 11:26:54,819 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+63e708ea-988b-49d9-8930-735c11964979 2017-09-28 11:57:04,856 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+63e708ea-988b-49d9-8930-735c11964979 2017-09-28 11:57:04,863 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+554e5ccc-9aac-4e47-89a4-d0efa5eaf0f7 2017-09-28 12:27:14,905 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+554e5ccc-9aac-4e47-89a4-d0efa5eaf0f7 2017-09-28 12:27:14,929 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+9565eba0-7e8e-4bd0-8843-4235503c1fcf 2017-09-28 12:57:24,979 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+9565eba0-7e8e-4bd0-8843-4235503c1fcf 2017-09-28 12:57:25,008 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+afbef839-ecc5-4477-ac7d-c2028398b9d1 2017-09-28 13:27:35,063 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+afbef839-ecc5-4477-ac7d-c2028398b9d1 2017-09-28 13:27:35,073 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+714b9247-ded3-4813-9daa-ed165b156948 2017-09-28 13:57:45,129 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+714b9247-ded3-4813-9daa-ed165b156948 2017-09-28 13:57:45,139 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+00cfb2cd-1c52-4248-b3ec-4a905ab13858 2017-09-28 14:27:55,170 [proScheduler-5] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+00cfb2cd-1c52-4248-b3ec-4a905ab13858 2017-09-28 14:27:55,176 [proScheduler-5] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+d14f3c06-40f5-4050-94c1-90a031cb187f 2017-09-28 14:58:05,209 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+d14f3c06-40f5-4050-94c1-90a031cb187f 2017-09-28 14:58:05,217 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+e27c720e-7e34-4c3c-a007-22f003978771 2017-09-28 15:28:15,254 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+e27c720e-7e34-4c3c-a007-22f003978771 2017-09-28 15:28:15,271 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+8cbd9ce0-af5c-4131-bb8d-3435cf8f4b51 2017-09-28 15:58:25,327 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+8cbd9ce0-af5c-4131-bb8d-3435cf8f4b51 2017-09-28 15:58:25,350 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+c0dd9b21-e080-4d5e-b5f9-e9c222bd637a 2017-09-28 16:28:35,399 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+c0dd9b21-e080-4d5e-b5f9-e9c222bd637a 2017-09-28 16:28:35,407 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+bc288d9e-512a-4897-9074-085bdc70d6bd 2017-09-28 16:58:45,450 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+bc288d9e-512a-4897-9074-085bdc70d6bd 2017-09-28 16:58:45,463 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+202f815e-d256-4db2-a307-6e439580fb61 2017-09-28 17:28:55,507 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+202f815e-d256-4db2-a307-6e439580fb61 2017-09-28 17:28:55,532 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0

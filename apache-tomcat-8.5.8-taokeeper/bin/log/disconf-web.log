@@ -1,0 +1,1073 @@
+ 2017-09-06 10:19:11,288 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener start...
+ 2017-09-06 10:19:11,288 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener end...
+ 2017-09-06 10:19:13,067 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis1> <server: 127.0.0.1:6379> object created. Connection pool will be initiated when calling.
+ 2017-09-06 10:19:13,082 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis2> <server: 127.0.0.1:6380> object created. Connection pool will be initiated when calling.
+ 2017-09-06 10:19:16,862 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zookeeper: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 , connected.
+ 2017-09-06 10:19:16,864 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.ZookeeperMgr - zoo prefix: /disconf
+ 2017-09-06 10:21:05,300 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener start...
+ 2017-09-06 10:21:05,300 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener end...
+ 2017-09-06 10:21:06,750 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis1> <server: 127.0.0.1:6379> object created. Connection pool will be initiated when calling.
+ 2017-09-06 10:21:06,781 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis2> <server: 127.0.0.1:6380> object created. Connection pool will be initiated when calling.
+ 2017-09-06 10:21:07,655 [localhost-startStop-1-EventThread] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk SyncConnected
+ 2017-09-06 10:21:07,655 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zookeeper: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 , connected.
+ 2017-09-06 10:21:07,655 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.ZookeeperMgr - zoo prefix: /disconf
+ 2017-09-06 10:21:08,061 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.ContextListener - start to load ContextListener
+ 2017-09-06 10:21:08,061 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.ContextListener - end of ContextListener
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,477 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/signin
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,602 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.auth.UserController - com.baidu.disconf.web.service.sign.form.SigninForm@7bbfbec3
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,886 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$5ff1e9ce.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,917 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:e3647c9d-8a51-48d9-98a9-7409f443d918user_key> <client: BeidouRedis2> <server: 127.0.0.1:6380> fail. Could not get a resource from the pool! (use 62 ms)
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,917 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$5ff1e9ce.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,979 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:e3647c9d-8a51-48d9-98a9-7409f443d918user_key> <client: BeidouRedis1> <server: 127.0.0.1:6379> fail. Could not get a resource from the pool! (use 62 ms)
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:11,979 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$5ff1e9ce.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:12,026 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:e3647c9d-8a51-48d9-98a9-7409f443d918user_key> <client: BeidouRedis2> <server: 127.0.0.1:6380> fail. Could not get a resource from the pool! (use 47 ms)
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:12,026 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisClient - Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$5ff1e9ce.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:12,057 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisCacheManager$2 - [[RedisCache:PUT] <key:e3647c9d-8a51-48d9-98a9-7409f443d918user_key> <client: BeidouRedis1> <server: 127.0.0.1:6379> fail. Could not get a resource from the pool! (use 31 ms)
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:12,057 [http-nio-8015-exec-1] ERROR com.github.knightliao.apollo.redis.RedisCacheManager - Return null because exception occurs: Could not get a resource from the pool@127.0.0.1:6379
+com.github.knightliao.apollo.redis.exception.RedisOperationException: Could not get a resource from the pool@127.0.0.1:6379
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:72) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.execute(RedisCacheManager.java:136) [apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager.put(RedisCacheManager.java:233) [apollo-1.0.14.jar:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.updateRedisVisitor(RedisLoginImpl.java:108) [classes/:na]
+	at com.baidu.disconf.web.web.auth.login.impl.RedisLoginImpl.login(RedisLoginImpl.java:92) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController.signin(UserController.java:105) [classes/:na]
+	at com.baidu.disconf.web.web.auth.UserController$$FastClassBySpringCGLIB$$6aab6efd.invoke(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653) [spring-aop-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at com.baidu.disconf.web.web.auth.UserController$$EnhancerBySpringCGLIB$$5ff1e9ce.signin(<generated>) [spring-core-4.1.7.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.1.7.RELEASE.jar:4.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22) ~[jedis-2.1.0.jar:na]
+	at com.github.knightliao.apollo.redis.RedisClient.set(RedisClient.java:245) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:235) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.RedisCacheManager$2.doOperation(RedisCacheManager.java:233) ~[apollo-1.0.14.jar:na]
+	at com.github.knightliao.apollo.redis.BaseRedisCallBack.doInRedis(BaseRedisCallBack.java:54) ~[apollo-1.0.14.jar:na]
+	... 60 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:59) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:66) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:131) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:162) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.Jedis.auth(Jedis.java:1964) ~[jedis-2.1.0.jar:na]
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:74) ~[jedis-2.1.0.jar:na]
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:974) ~[commons-pool-1.4.jar:1.4]
+	at redis.clients.util.Pool.getResource(Pool.java:20) ~[jedis-2.1.0.jar:na]
+	... 64 common frames omitted
+00067c21-821e-4ea9-b76c-580c24889bb0 2017-09-06 10:21:12,104 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+1e7af4e0-3df0-46c6-8727-43b46474c644 2017-09-06 10:21:12,244 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+94d4c07a-956d-4454-afc2-004eb2e9152d 2017-09-06 10:21:12,245 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+252ee769-f99e-410f-a30e-ec7203bfb503 2017-09-06 10:21:12,245 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+1e7af4e0-3df0-46c6-8727-43b46474c644 2017-09-06 10:21:12,246 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+252ee769-f99e-410f-a30e-ec7203bfb503 2017-09-06 10:21:12,264 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.impl.RoleResourceMgrImpl - Querying role_resource table to get all...
+94d4c07a-956d-4454-afc2-004eb2e9152d 2017-09-06 10:21:12,264 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.impl.RoleResourceMgrImpl - Querying role_resource table to get all...
+252ee769-f99e-410f-a30e-ec7203bfb503 2017-09-06 10:21:12,282 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+94d4c07a-956d-4454-afc2-004eb2e9152d 2017-09-06 10:21:12,282 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+252ee769-f99e-410f-a30e-ec7203bfb503 2017-09-06 10:21:12,292 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=252ee769-f99e-410f-a30e-ec7203bfb503, success=true]
+94d4c07a-956d-4454-afc2-004eb2e9152d 2017-09-06 10:21:12,327 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=94d4c07a-956d-4454-afc2-004eb2e9152d, success=true]
+1189d788-b039-490f-8ee5-15c0f0ba8041 2017-09-06 10:21:14,965 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+1189d788-b039-490f-8ee5-15c0f0ba8041 2017-09-06 10:21:14,974 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+1189d788-b039-490f-8ee5-15c0f0ba8041 2017-09-06 10:21:14,983 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=null]
+1189d788-b039-490f-8ee5-15c0f0ba8041 2017-09-06 10:21:14,988 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=1189d788-b039-490f-8ee5-15c0f0ba8041, success=true]
+faed1d2c-3f8a-4d40-a561-961ea9c8c4bd 2017-09-06 10:21:16,283 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+faed1d2c-3f8a-4d40-a561-961ea9c8c4bd 2017-09-06 10:21:16,290 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+faed1d2c-3f8a-4d40-a561-961ea9c8c4bd 2017-09-06 10:21:16,292 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+faed1d2c-3f8a-4d40-a561-961ea9c8c4bd 2017-09-06 10:21:16,297 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=faed1d2c-3f8a-4d40-a561-961ea9c8c4bd, success=true]
+9f89e484-b7f1-4d39-80fc-19854eb3cc79 2017-09-06 10:21:16,313 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+9f89e484-b7f1-4d39-80fc-19854eb3cc79 2017-09-06 10:21:16,338 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+9f89e484-b7f1-4d39-80fc-19854eb3cc79 2017-09-06 10:21:16,339 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+9f89e484-b7f1-4d39-80fc-19854eb3cc79 2017-09-06 10:21:16,358 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=9f89e484-b7f1-4d39-80fc-19854eb3cc79, success=true]
+cd37fcc2-7b2b-42fd-88bb-a79ac726970d 2017-09-06 10:21:17,949 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+48e44625-b1cb-4b84-b96f-176aaaa0ded1 2017-09-06 10:21:17,949 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+cd37fcc2-7b2b-42fd-88bb-a79ac726970d 2017-09-06 10:21:17,949 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+6c064ccc-5e9c-483b-a914-e40316887a26 2017-09-06 10:21:17,949 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+48e44625-b1cb-4b84-b96f-176aaaa0ded1 2017-09-06 10:21:17,950 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+6c064ccc-5e9c-483b-a914-e40316887a26 2017-09-06 10:21:17,951 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+cd37fcc2-7b2b-42fd-88bb-a79ac726970d 2017-09-06 10:21:17,953 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=cd37fcc2-7b2b-42fd-88bb-a79ac726970d, success=true]
+6c064ccc-5e9c-483b-a914-e40316887a26 2017-09-06 10:21:17,954 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=6c064ccc-5e9c-483b-a914-e40316887a26, success=true]
+344cc65a-c08f-49bb-a030-25fe47c2dc15 2017-09-06 10:21:18,065 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+344cc65a-c08f-49bb-a030-25fe47c2dc15 2017-09-06 10:21:18,087 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+1bc7b899-5856-41f8-b81b-9e429ac65008 2017-09-06 10:21:18,860 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+1bc7b899-5856-41f8-b81b-9e429ac65008 2017-09-06 10:21:18,862 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+1bc7b899-5856-41f8-b81b-9e429ac65008 2017-09-06 10:21:18,862 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=-1, envId=3]
+1bc7b899-5856-41f8-b81b-9e429ac65008 2017-09-06 10:21:18,864 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=1bc7b899-5856-41f8-b81b-9e429ac65008, success=true]
+2007a89c-fdda-43a4-86d2-fd32c3e07009 2017-09-06 10:21:19,311 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+2007a89c-fdda-43a4-86d2-fd32c3e07009 2017-09-06 10:21:19,315 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+2007a89c-fdda-43a4-86d2-fd32c3e07009 2017-09-06 10:21:19,316 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=-1, envId=2]
+2007a89c-fdda-43a4-86d2-fd32c3e07009 2017-09-06 10:21:19,320 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=2007a89c-fdda-43a4-86d2-fd32c3e07009, success=true]
+8f087037-7f82-4d87-a100-85f5f687cf57 2017-09-06 10:21:19,702 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+8f087037-7f82-4d87-a100-85f5f687cf57 2017-09-06 10:21:19,707 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+8f087037-7f82-4d87-a100-85f5f687cf57 2017-09-06 10:21:19,709 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=-1, envId=1]
+8f087037-7f82-4d87-a100-85f5f687cf57 2017-09-06 10:21:19,713 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=8f087037-7f82-4d87-a100-85f5f687cf57, success=true]
+d5cb43ae-97d9-4919-82cd-1b774e22aa7e 2017-09-06 10:21:20,836 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+d5cb43ae-97d9-4919-82cd-1b774e22aa7e 2017-09-06 10:21:20,841 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d5cb43ae-97d9-4919-82cd-1b774e22aa7e 2017-09-06 10:21:20,844 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=1]
+d5cb43ae-97d9-4919-82cd-1b774e22aa7e 2017-09-06 10:21:20,848 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=d5cb43ae-97d9-4919-82cd-1b774e22aa7e, success=true]
+08f6ee17-9bb8-45b4-aa09-f88815a9d64c 2017-09-06 10:21:20,868 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+08f6ee17-9bb8-45b4-aa09-f88815a9d64c 2017-09-06 10:21:20,906 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=08f6ee17-9bb8-45b4-aa09-f88815a9d64c, success=false]
+2d83d802-e2b7-42f7-b9e6-6b2153cf4577 2017-09-06 10:21:21,487 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+2d83d802-e2b7-42f7-b9e6-6b2153cf4577 2017-09-06 10:21:21,493 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+2d83d802-e2b7-42f7-b9e6-6b2153cf4577 2017-09-06 10:21:21,495 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+2d83d802-e2b7-42f7-b9e6-6b2153cf4577 2017-09-06 10:21:21,498 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=2d83d802-e2b7-42f7-b9e6-6b2153cf4577, success=true]
+e32f1dcb-fd7e-45e9-ac50-d45931ee765a 2017-09-06 10:21:21,514 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+e32f1dcb-fd7e-45e9-ac50-d45931ee765a 2017-09-06 10:21:21,517 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+e32f1dcb-fd7e-45e9-ac50-d45931ee765a 2017-09-06 10:21:21,518 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+e32f1dcb-fd7e-45e9-ac50-d45931ee765a 2017-09-06 10:21:21,527 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=e32f1dcb-fd7e-45e9-ac50-d45931ee765a, success=true]
+c58b81e2-f559-4f50-80de-a4dbb9905d1c 2017-09-06 10:21:23,347 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+c58b81e2-f559-4f50-80de-a4dbb9905d1c 2017-09-06 10:21:23,355 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c58b81e2-f559-4f50-80de-a4dbb9905d1c 2017-09-06 10:21:23,367 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181, createTime=20170905173206, modifyTime=201709051756]]
+42433825-4f95-4e72-878e-d74c414b8fcd 2017-09-06 10:21:24,704 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/152
+42433825-4f95-4e72-878e-d74c414b8fcd 2017-09-06 10:21:24,706 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+42433825-4f95-4e72-878e-d74c414b8fcd 2017-09-06 10:21:24,714 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=152, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=email.properties, value=#SMTP配置
+mail.host=smtp.126.com
+mail.port=25
+mail.username=foreyer_test@126.com
+mail.password=g201009719
+mail.smtp.auth=true
+mail.smtp.timeout=30000
+mail.default.from=foreyer_test@126.com
+, createTime=20170905175752, modifyTime=201709051757]]
+119bed9a-e37a-44ad-b87d-a8e342fd302c 2017-09-06 10:21:25,602 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/155
+119bed9a-e37a-44ad-b87d-a8e342fd302c 2017-09-06 10:21:25,607 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+119bed9a-e37a-44ad-b87d-a8e342fd302c 2017-09-06 10:21:25,619 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=155, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jdbc.properties, value=jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://127.0.0.1:3306/vacomall?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+jdbc.username=root
+jdbc.password=root
+validationQuery=SELECT 1, createTime=20170905175811, modifyTime=201709051758]]
+751b4e86-fc4f-4fde-b14d-f1e5e0bf140a 2017-09-06 10:21:26,312 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/153
+751b4e86-fc4f-4fde-b14d-f1e5e0bf140a 2017-09-06 10:21:26,315 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+751b4e86-fc4f-4fde-b14d-f1e5e0bf140a 2017-09-06 10:21:26,330 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=153, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jedis.properties, value=jedis.host=127.0.0.1
+jedis.port=6379, createTime=20170905175803, modifyTime=201709051758]]
+e714af99-e5d7-4edb-a2d6-5d9f8bcdf795 2017-09-06 10:21:26,989 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/154
+e714af99-e5d7-4edb-a2d6-5d9f8bcdf795 2017-09-06 10:21:26,991 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+e714af99-e5d7-4edb-a2d6-5d9f8bcdf795 2017-09-06 10:21:27,000 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=154, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=mq.properties, value=## MQ
+#mq.brokerURL=tcp://192.168.1.177:61616
+#mq.userName=wusc
+#mq.password=wusc.123
+
+mq.brokerURL=tcp://10.16.31.20:61616
+mq.userName=admin
+mq.password=123456
+mq.pool.maxConnections=10
+#queueName
+queueName=org.goshop.mqemail.producer.v1, createTime=20170905175807, modifyTime=201709051758]]
+405211d4-27d8-4ec9-8f7a-b7d69206116d 2017-09-06 10:22:06,913 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+405211d4-27d8-4ec9-8f7a-b7d69206116d 2017-09-06 10:22:06,923 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+405211d4-27d8-4ec9-8f7a-b7d69206116d 2017-09-06 10:22:06,926 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+405211d4-27d8-4ec9-8f7a-b7d69206116d 2017-09-06 10:22:06,928 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=405211d4-27d8-4ec9-8f7a-b7d69206116d, success=true]
+ae2ea2fd-939e-4bf1-bdff-1a22eb6e2b69 2017-09-06 10:22:06,941 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+ae2ea2fd-939e-4bf1-bdff-1a22eb6e2b69 2017-09-06 10:22:06,944 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+ae2ea2fd-939e-4bf1-bdff-1a22eb6e2b69 2017-09-06 10:22:06,945 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+ae2ea2fd-939e-4bf1-bdff-1a22eb6e2b69 2017-09-06 10:22:06,951 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=ae2ea2fd-939e-4bf1-bdff-1a22eb6e2b69, success=true]
+c0a043f4-ef7b-49af-83da-8625bf5d91b9 2017-09-06 10:22:07,551 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+c0a043f4-ef7b-49af-83da-8625bf5d91b9 2017-09-06 10:22:07,552 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c0a043f4-ef7b-49af-83da-8625bf5d91b9 2017-09-06 10:22:07,552 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=2]
+c0a043f4-ef7b-49af-83da-8625bf5d91b9 2017-09-06 10:22:07,554 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=c0a043f4-ef7b-49af-83da-8625bf5d91b9, success=true]
+8039fe43-24df-477b-9ec2-d77e0f973f0a 2017-09-06 10:22:07,561 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+8039fe43-24df-477b-9ec2-d77e0f973f0a 2017-09-06 10:22:07,563 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=8039fe43-24df-477b-9ec2-d77e0f973f0a, success=false]
+8ec43b62-64ae-42d8-a0b0-3f23324f6f73 2017-09-06 10:22:08,687 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+8ec43b62-64ae-42d8-a0b0-3f23324f6f73 2017-09-06 10:22:08,691 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+8ec43b62-64ae-42d8-a0b0-3f23324f6f73 2017-09-06 10:22:08,692 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+8ec43b62-64ae-42d8-a0b0-3f23324f6f73 2017-09-06 10:22:08,698 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=8ec43b62-64ae-42d8-a0b0-3f23324f6f73, success=true]
+a3656786-391f-4c2b-921e-6fcf5d17eeab 2017-09-06 10:22:08,714 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+a3656786-391f-4c2b-921e-6fcf5d17eeab 2017-09-06 10:22:08,717 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+a3656786-391f-4c2b-921e-6fcf5d17eeab 2017-09-06 10:22:08,717 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+a3656786-391f-4c2b-921e-6fcf5d17eeab 2017-09-06 10:22:08,726 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=a3656786-391f-4c2b-921e-6fcf5d17eeab, success=true]
+c599f86e-f16e-4f56-8580-74699a46ac17 2017-09-06 10:22:10,232 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+c599f86e-f16e-4f56-8580-74699a46ac17 2017-09-06 10:22:10,243 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c599f86e-f16e-4f56-8580-74699a46ac17 2017-09-06 10:22:10,245 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=4]
+c599f86e-f16e-4f56-8580-74699a46ac17 2017-09-06 10:22:10,247 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=c599f86e-f16e-4f56-8580-74699a46ac17, success=true]
+2fa61422-2f8d-41e5-9439-c68a613fea90 2017-09-06 10:22:10,258 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+2fa61422-2f8d-41e5-9439-c68a613fea90 2017-09-06 10:22:10,261 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=2fa61422-2f8d-41e5-9439-c68a613fea90, success=false]
+ce96a886-6788-476f-a1f5-f083d6d902a3 2017-09-06 10:22:10,942 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+ce96a886-6788-476f-a1f5-f083d6d902a3 2017-09-06 10:22:10,946 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+ce96a886-6788-476f-a1f5-f083d6d902a3 2017-09-06 10:22:10,947 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+ce96a886-6788-476f-a1f5-f083d6d902a3 2017-09-06 10:22:10,949 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=ce96a886-6788-476f-a1f5-f083d6d902a3, success=true]
+2f2c058f-2b41-45ac-a140-c8f9194f62f0 2017-09-06 10:22:10,957 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+2f2c058f-2b41-45ac-a140-c8f9194f62f0 2017-09-06 10:22:10,960 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+2f2c058f-2b41-45ac-a140-c8f9194f62f0 2017-09-06 10:22:10,960 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+2f2c058f-2b41-45ac-a140-c8f9194f62f0 2017-09-06 10:22:10,966 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=2f2c058f-2b41-45ac-a140-c8f9194f62f0, success=true]
+427ba521-1323-4199-b6af-183ca406cb71 2017-09-06 10:22:12,197 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+427ba521-1323-4199-b6af-183ca406cb71 2017-09-06 10:22:12,201 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+427ba521-1323-4199-b6af-183ca406cb71 2017-09-06 10:22:12,202 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=2]
+427ba521-1323-4199-b6af-183ca406cb71 2017-09-06 10:22:12,203 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=427ba521-1323-4199-b6af-183ca406cb71, success=true]
+a4a1bf32-17ed-47a5-8c37-48cf6dae31b1 2017-09-06 10:22:12,211 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+a4a1bf32-17ed-47a5-8c37-48cf6dae31b1 2017-09-06 10:22:12,213 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=a4a1bf32-17ed-47a5-8c37-48cf6dae31b1, success=false]
+80200a56-49e5-4746-9e8d-91b69e2484fd 2017-09-06 10:22:12,636 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+80200a56-49e5-4746-9e8d-91b69e2484fd 2017-09-06 10:22:12,638 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+80200a56-49e5-4746-9e8d-91b69e2484fd 2017-09-06 10:22:12,639 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=1]
+80200a56-49e5-4746-9e8d-91b69e2484fd 2017-09-06 10:22:12,641 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=80200a56-49e5-4746-9e8d-91b69e2484fd, success=true]
+3ec17b79-4bc5-4cc5-b9cb-3fac3948874e 2017-09-06 10:22:12,648 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+3ec17b79-4bc5-4cc5-b9cb-3fac3948874e 2017-09-06 10:22:12,650 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=3ec17b79-4bc5-4cc5-b9cb-3fac3948874e, success=false]
+0151d073-b5ef-48ce-9c81-a40f70928bd2 2017-09-06 10:22:13,324 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+0151d073-b5ef-48ce-9c81-a40f70928bd2 2017-09-06 10:22:13,326 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+0151d073-b5ef-48ce-9c81-a40f70928bd2 2017-09-06 10:22:13,328 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=2]
+0151d073-b5ef-48ce-9c81-a40f70928bd2 2017-09-06 10:22:13,330 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=0151d073-b5ef-48ce-9c81-a40f70928bd2, success=true]
+17605306-7374-4a24-bc3b-082f0f44c528 2017-09-06 10:22:13,339 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+17605306-7374-4a24-bc3b-082f0f44c528 2017-09-06 10:22:13,341 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=17605306-7374-4a24-bc3b-082f0f44c528, success=false]
+72405d97-bc06-4a6a-82fe-ba01c224b753 2017-09-06 10:22:13,801 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+72405d97-bc06-4a6a-82fe-ba01c224b753 2017-09-06 10:22:13,809 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+72405d97-bc06-4a6a-82fe-ba01c224b753 2017-09-06 10:22:13,810 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+72405d97-bc06-4a6a-82fe-ba01c224b753 2017-09-06 10:22:13,813 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=72405d97-bc06-4a6a-82fe-ba01c224b753, success=true]
+7d561c53-a27f-4589-a477-7c117cf31daf 2017-09-06 10:22:13,831 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+7d561c53-a27f-4589-a477-7c117cf31daf 2017-09-06 10:22:13,833 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+7d561c53-a27f-4589-a477-7c117cf31daf 2017-09-06 10:22:13,833 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+7d561c53-a27f-4589-a477-7c117cf31daf 2017-09-06 10:22:13,841 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=7d561c53-a27f-4589-a477-7c117cf31daf, success=true]
+d14ae6a6-8d74-4f4a-bfd7-759720115e21 2017-09-06 10:22:15,221 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+d14ae6a6-8d74-4f4a-bfd7-759720115e21 2017-09-06 10:22:15,226 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d14ae6a6-8d74-4f4a-bfd7-759720115e21 2017-09-06 10:22:15,229 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+d14ae6a6-8d74-4f4a-bfd7-759720115e21 2017-09-06 10:22:15,232 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=d14ae6a6-8d74-4f4a-bfd7-759720115e21, success=true]
+d8d08e2d-8e5b-4cc8-b140-8ff72fd76a0f 2017-09-06 10:22:15,244 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+d8d08e2d-8e5b-4cc8-b140-8ff72fd76a0f 2017-09-06 10:22:15,247 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d8d08e2d-8e5b-4cc8-b140-8ff72fd76a0f 2017-09-06 10:22:15,248 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+d8d08e2d-8e5b-4cc8-b140-8ff72fd76a0f 2017-09-06 10:22:15,257 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=d8d08e2d-8e5b-4cc8-b140-8ff72fd76a0f, success=true]
+06998f53-26bc-4e8e-8620-03bead0d7990 2017-09-06 10:22:18,847 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+06998f53-26bc-4e8e-8620-03bead0d7990 2017-09-06 10:22:18,850 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+06998f53-26bc-4e8e-8620-03bead0d7990 2017-09-06 10:22:18,861 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181, createTime=20170905173206, modifyTime=201709051756]]
+c45bd7ed-d182-4b01-873f-147d37344f47 2017-09-06 10:22:20,068 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/152
+c45bd7ed-d182-4b01-873f-147d37344f47 2017-09-06 10:22:20,071 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c45bd7ed-d182-4b01-873f-147d37344f47 2017-09-06 10:22:20,081 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=152, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=email.properties, value=#SMTP配置
+mail.host=smtp.126.com
+mail.port=25
+mail.username=foreyer_test@126.com
+mail.password=g201009719
+mail.smtp.auth=true
+mail.smtp.timeout=30000
+mail.default.from=foreyer_test@126.com
+, createTime=20170905175752, modifyTime=201709051757]]
+0b1a4fa1-6daf-49de-8841-79d6e115122e 2017-09-06 10:22:20,943 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/155
+0b1a4fa1-6daf-49de-8841-79d6e115122e 2017-09-06 10:22:20,946 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+0b1a4fa1-6daf-49de-8841-79d6e115122e 2017-09-06 10:22:20,959 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=155, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jdbc.properties, value=jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://127.0.0.1:3306/vacomall?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+jdbc.username=root
+jdbc.password=root
+validationQuery=SELECT 1, createTime=20170905175811, modifyTime=201709051758]]
+305727d7-ee8c-41c9-873d-3ab5bc5f3f97 2017-09-06 10:22:21,459 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/153
+305727d7-ee8c-41c9-873d-3ab5bc5f3f97 2017-09-06 10:22:21,461 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+305727d7-ee8c-41c9-873d-3ab5bc5f3f97 2017-09-06 10:22:21,470 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=153, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jedis.properties, value=jedis.host=127.0.0.1
+jedis.port=6379, createTime=20170905175803, modifyTime=201709051758]]
+f76a0c3c-bd71-436d-9ee5-edb2375fd140 2017-09-06 10:22:22,157 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/154
+f76a0c3c-bd71-436d-9ee5-edb2375fd140 2017-09-06 10:22:22,160 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+f76a0c3c-bd71-436d-9ee5-edb2375fd140 2017-09-06 10:22:22,173 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=154, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=mq.properties, value=## MQ
+#mq.brokerURL=tcp://192.168.1.177:61616
+#mq.userName=wusc
+#mq.password=wusc.123
+
+mq.brokerURL=tcp://10.16.31.20:61616
+mq.userName=admin
+mq.password=123456
+mq.pool.maxConnections=10
+#queueName
+queueName=org.goshop.mqemail.producer.v1, createTime=20170905175807, modifyTime=201709051758]]
+ddc1766c-8222-4fe8-baaa-cdcb345b1ddc 2017-09-06 10:22:36,427 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+ddc1766c-8222-4fe8-baaa-cdcb345b1ddc 2017-09-06 10:22:36,434 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+ddc1766c-8222-4fe8-baaa-cdcb345b1ddc 2017-09-06 10:22:36,435 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=4]
+ddc1766c-8222-4fe8-baaa-cdcb345b1ddc 2017-09-06 10:22:36,438 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=ddc1766c-8222-4fe8-baaa-cdcb345b1ddc, success=true]
+f0afe0f2-9b32-4bee-afd5-e0c2e7765a52 2017-09-06 10:22:36,448 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+f0afe0f2-9b32-4bee-afd5-e0c2e7765a52 2017-09-06 10:22:36,451 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=f0afe0f2-9b32-4bee-afd5-e0c2e7765a52, success=false]
+1783c207-f508-4999-8b2f-4e5abaa6e28d 2017-09-06 10:22:37,437 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+1783c207-f508-4999-8b2f-4e5abaa6e28d 2017-09-06 10:22:37,442 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+1783c207-f508-4999-8b2f-4e5abaa6e28d 2017-09-06 10:22:37,444 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+1783c207-f508-4999-8b2f-4e5abaa6e28d 2017-09-06 10:22:37,450 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=1783c207-f508-4999-8b2f-4e5abaa6e28d, success=true]
+aa7426e1-22e6-434f-accf-5dcc5ea34090 2017-09-06 10:22:37,466 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+aa7426e1-22e6-434f-accf-5dcc5ea34090 2017-09-06 10:22:37,468 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+aa7426e1-22e6-434f-accf-5dcc5ea34090 2017-09-06 10:22:37,469 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+aa7426e1-22e6-434f-accf-5dcc5ea34090 2017-09-06 10:22:37,479 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=aa7426e1-22e6-434f-accf-5dcc5ea34090, success=true]
+d5c18e86-ab30-421e-abfd-3c2539f80beb 2017-09-06 10:43:12,899 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+00162ea3-75cd-483d-be7a-7371d75f9bab 2017-09-06 10:43:12,992 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+496427ba-7509-473d-832a-34c3040f4a55 2017-09-06 10:43:13,266 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+503b17b6-af44-4fa6-b48c-517e4f8744c3 2017-09-06 10:43:25,141 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+c668b016-59e2-420c-ae44-ab81a8dec942 2017-09-06 10:43:25,141 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+503b17b6-af44-4fa6-b48c-517e4f8744c3 2017-09-06 10:43:25,142 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c902b967-e976-474d-b0c7-0a33d2affac9 2017-09-06 10:43:25,141 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+c668b016-59e2-420c-ae44-ab81a8dec942 2017-09-06 10:43:25,142 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c902b967-e976-474d-b0c7-0a33d2affac9 2017-09-06 10:43:25,143 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+503b17b6-af44-4fa6-b48c-517e4f8744c3 2017-09-06 10:43:25,144 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=503b17b6-af44-4fa6-b48c-517e4f8744c3, success=true]
+c668b016-59e2-420c-ae44-ab81a8dec942 2017-09-06 10:43:25,144 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=c668b016-59e2-420c-ae44-ab81a8dec942, success=true]
+d196516e-3f3a-444b-b59c-9df1d4ffa5ec 2017-09-06 10:43:27,195 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+d196516e-3f3a-444b-b59c-9df1d4ffa5ec 2017-09-06 10:43:27,198 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d196516e-3f3a-444b-b59c-9df1d4ffa5ec 2017-09-06 10:43:27,199 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=null]
+d196516e-3f3a-444b-b59c-9df1d4ffa5ec 2017-09-06 10:43:27,204 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=d196516e-3f3a-444b-b59c-9df1d4ffa5ec, success=true]
+71152176-1fa7-431c-9ee4-8b5ade84fe21 2017-09-06 10:43:28,062 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+71152176-1fa7-431c-9ee4-8b5ade84fe21 2017-09-06 10:43:28,066 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+71152176-1fa7-431c-9ee4-8b5ade84fe21 2017-09-06 10:43:28,069 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+71152176-1fa7-431c-9ee4-8b5ade84fe21 2017-09-06 10:43:28,073 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=71152176-1fa7-431c-9ee4-8b5ade84fe21, success=true]
+c6675f33-d14d-4dc3-aa7b-4d819432338d 2017-09-06 10:43:28,096 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+c6675f33-d14d-4dc3-aa7b-4d819432338d 2017-09-06 10:43:28,098 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c6675f33-d14d-4dc3-aa7b-4d819432338d 2017-09-06 10:43:28,099 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+c6675f33-d14d-4dc3-aa7b-4d819432338d 2017-09-06 10:43:28,193 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=c6675f33-d14d-4dc3-aa7b-4d819432338d, success=true]
+e4ffb7d1-7b51-4f6f-9e1e-bee3baf68de9 2017-09-06 10:43:29,405 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+e4ffb7d1-7b51-4f6f-9e1e-bee3baf68de9 2017-09-06 10:43:29,415 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+e4ffb7d1-7b51-4f6f-9e1e-bee3baf68de9 2017-09-06 10:43:29,416 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+e4ffb7d1-7b51-4f6f-9e1e-bee3baf68de9 2017-09-06 10:43:29,422 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=e4ffb7d1-7b51-4f6f-9e1e-bee3baf68de9, success=true]
+18caf440-aa33-4685-bde8-b8aacf622c3f 2017-09-06 10:43:29,430 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+18caf440-aa33-4685-bde8-b8aacf622c3f 2017-09-06 10:43:29,432 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+18caf440-aa33-4685-bde8-b8aacf622c3f 2017-09-06 10:43:29,433 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+18caf440-aa33-4685-bde8-b8aacf622c3f 2017-09-06 10:43:29,441 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=18caf440-aa33-4685-bde8-b8aacf622c3f, success=true]
+30b0eafe-2a56-453f-b755-2e07bba6af31 2017-09-06 10:43:31,367 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/zk/151
+30b0eafe-2a56-453f-b755-2e07bba6af31 2017-09-06 10:43:31,370 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/zk/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+30b0eafe-2a56-453f-b755-2e07bba6af31 2017-09-06 10:43:31,385 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=MachineListVo [datalist=[ZkDisconfDataItem [machine=jameszhou-PC_0_781eed73-89c8-4965-a6c8-9d75604044d5, value={"dubbo.address":"zookeeper://127.0.0.1:2181"}, errorList=[]]], errorNum=0, machineSize=1]]
+4013d0df-d540-45ab-a4eb-961eb4d2a845 2017-09-06 10:47:23,925 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+741b23cc-49da-4c35-941f-9d4df2ef7e91 2017-09-06 10:47:23,969 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+be086fb8-8bef-4b9f-b055-8ae50313615d 2017-09-06 10:47:24,147 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+328c8609-aef4-40ed-8b2c-d4e6f81b99dd 2017-09-06 10:47:24,454 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+847e90ec-2c4e-43a6-924b-8bf4c8759b4e 2017-09-06 10:47:24,630 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+fff46e88-66c7-4087-9c4f-b9fcce1046ec 2017-09-06 10:47:39,149 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+fff46e88-66c7-4087-9c4f-b9fcce1046ec 2017-09-06 10:47:39,160 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+fff46e88-66c7-4087-9c4f-b9fcce1046ec 2017-09-06 10:47:39,163 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+fff46e88-66c7-4087-9c4f-b9fcce1046ec 2017-09-06 10:47:39,168 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=fff46e88-66c7-4087-9c4f-b9fcce1046ec, success=true]
+77c1a4d3-f72c-4fd2-9baf-1364f92fc8ed 2017-09-06 10:47:39,181 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+77c1a4d3-f72c-4fd2-9baf-1364f92fc8ed 2017-09-06 10:47:39,183 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+77c1a4d3-f72c-4fd2-9baf-1364f92fc8ed 2017-09-06 10:47:39,184 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+77c1a4d3-f72c-4fd2-9baf-1364f92fc8ed 2017-09-06 10:47:39,196 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=77c1a4d3-f72c-4fd2-9baf-1364f92fc8ed, success=true]
+cbe77bec-f0eb-4df9-a77b-af5c7afa817c 2017-09-06 10:47:39,925 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+cbe77bec-f0eb-4df9-a77b-af5c7afa817c 2017-09-06 10:47:39,934 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+cbe77bec-f0eb-4df9-a77b-af5c7afa817c 2017-09-06 10:47:39,937 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=4]
+cbe77bec-f0eb-4df9-a77b-af5c7afa817c 2017-09-06 10:47:39,941 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=cbe77bec-f0eb-4df9-a77b-af5c7afa817c, success=true]
+05bce65b-c824-4180-8e3d-9765998a49f0 2017-09-06 10:47:39,955 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+05bce65b-c824-4180-8e3d-9765998a49f0 2017-09-06 10:47:39,959 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={field={version=不能为null}}, sessionId=05bce65b-c824-4180-8e3d-9765998a49f0, success=false]
+bb9c69ba-6d1d-41e8-b869-5e07c9b751a9 2017-09-06 10:47:40,933 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+bb9c69ba-6d1d-41e8-b869-5e07c9b751a9 2017-09-06 10:47:40,939 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+bb9c69ba-6d1d-41e8-b869-5e07c9b751a9 2017-09-06 10:47:40,942 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+bb9c69ba-6d1d-41e8-b869-5e07c9b751a9 2017-09-06 10:47:40,946 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=bb9c69ba-6d1d-41e8-b869-5e07c9b751a9, success=true]
+fe115fed-4e57-4f86-9236-295b1845c8c2 2017-09-06 10:47:40,965 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+fe115fed-4e57-4f86-9236-295b1845c8c2 2017-09-06 10:47:40,967 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+fe115fed-4e57-4f86-9236-295b1845c8c2 2017-09-06 10:47:40,968 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+fe115fed-4e57-4f86-9236-295b1845c8c2 2017-09-06 10:47:40,978 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=fe115fed-4e57-4f86-9236-295b1845c8c2, success=true]
+0f263cca-b3a1-46bd-a21b-238ef425045f 2017-09-06 10:47:42,013 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+0f263cca-b3a1-46bd-a21b-238ef425045f 2017-09-06 10:47:42,019 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+0f263cca-b3a1-46bd-a21b-238ef425045f 2017-09-06 10:47:42,024 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+0f263cca-b3a1-46bd-a21b-238ef425045f 2017-09-06 10:47:42,028 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=0f263cca-b3a1-46bd-a21b-238ef425045f, success=true]
+0f315a9d-5e23-45a8-92d8-0cef58384f8b 2017-09-06 10:47:42,045 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+0f315a9d-5e23-45a8-92d8-0cef58384f8b 2017-09-06 10:47:42,047 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+0f315a9d-5e23-45a8-92d8-0cef58384f8b 2017-09-06 10:47:42,047 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+0f315a9d-5e23-45a8-92d8-0cef58384f8b 2017-09-06 10:47:42,057 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=0f315a9d-5e23-45a8-92d8-0cef58384f8b, success=true]
+74340f73-19ba-4676-9f77-996acd14941f 2017-09-06 10:47:42,246 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+74340f73-19ba-4676-9f77-996acd14941f 2017-09-06 10:47:42,250 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+74340f73-19ba-4676-9f77-996acd14941f 2017-09-06 10:47:42,252 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+74340f73-19ba-4676-9f77-996acd14941f 2017-09-06 10:47:42,256 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=74340f73-19ba-4676-9f77-996acd14941f, success=true]
+9c9dfae7-9e35-462d-95e7-a56039cbd9c8 2017-09-06 10:47:42,270 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+9c9dfae7-9e35-462d-95e7-a56039cbd9c8 2017-09-06 10:47:42,273 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+9c9dfae7-9e35-462d-95e7-a56039cbd9c8 2017-09-06 10:47:42,274 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+9c9dfae7-9e35-462d-95e7-a56039cbd9c8 2017-09-06 10:47:42,287 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=9c9dfae7-9e35-462d-95e7-a56039cbd9c8, success=true]
+47a1a699-3d8c-4ade-a855-8f7c3849bb5b 2017-09-06 10:47:42,900 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+47a1a699-3d8c-4ade-a855-8f7c3849bb5b 2017-09-06 10:47:42,905 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+47a1a699-3d8c-4ade-a855-8f7c3849bb5b 2017-09-06 10:47:42,908 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+47a1a699-3d8c-4ade-a855-8f7c3849bb5b 2017-09-06 10:47:42,914 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=47a1a699-3d8c-4ade-a855-8f7c3849bb5b, success=true]
+4e3c2b03-706d-49e8-a1cb-1ca8c1973ac1 2017-09-06 10:47:42,924 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+4e3c2b03-706d-49e8-a1cb-1ca8c1973ac1 2017-09-06 10:47:42,926 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+4e3c2b03-706d-49e8-a1cb-1ca8c1973ac1 2017-09-06 10:47:42,927 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+4e3c2b03-706d-49e8-a1cb-1ca8c1973ac1 2017-09-06 10:47:42,940 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=4e3c2b03-706d-49e8-a1cb-1ca8c1973ac1, success=true]
+71d62811-6d0b-4468-b8e5-585e6ce793b9 2017-09-06 10:47:44,118 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/zk/153
+71d62811-6d0b-4468-b8e5-585e6ce793b9 2017-09-06 10:47:44,121 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/zk/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+71d62811-6d0b-4468-b8e5-585e6ce793b9 2017-09-06 10:47:44,136 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=MachineListVo [datalist=[], errorNum=0, machineSize=0]]
+99b63fb9-fe37-4104-b627-4dbee509c20f 2017-09-06 10:47:45,471 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+99b63fb9-fe37-4104-b627-4dbee509c20f 2017-09-06 10:47:45,471 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+47ed54a2-8369-4328-b291-91cf71b103d3 2017-09-06 10:47:45,481 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+47ed54a2-8369-4328-b291-91cf71b103d3 2017-09-06 10:47:45,482 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+db2c0190-b76d-4992-955d-35e4f7507128 2017-09-06 10:47:45,481 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+47ed54a2-8369-4328-b291-91cf71b103d3 2017-09-06 10:47:45,484 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=47ed54a2-8369-4328-b291-91cf71b103d3, success=true]
+db2c0190-b76d-4992-955d-35e4f7507128 2017-09-06 10:47:45,484 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+db2c0190-b76d-4992-955d-35e4f7507128 2017-09-06 10:47:45,489 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=db2c0190-b76d-4992-955d-35e4f7507128, success=true]
+1b01c877-f0d9-46fb-804d-7f2081e98d16 2017-09-06 10:47:47,418 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+1b01c877-f0d9-46fb-804d-7f2081e98d16 2017-09-06 10:47:47,426 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+1b01c877-f0d9-46fb-804d-7f2081e98d16 2017-09-06 10:47:47,428 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=null]
+1b01c877-f0d9-46fb-804d-7f2081e98d16 2017-09-06 10:47:47,434 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=1b01c877-f0d9-46fb-804d-7f2081e98d16, success=true]
+8f4c633e-4c5a-4812-b6da-0f26347cf6f8 2017-09-06 10:47:48,684 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+8f4c633e-4c5a-4812-b6da-0f26347cf6f8 2017-09-06 10:47:48,690 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+8f4c633e-4c5a-4812-b6da-0f26347cf6f8 2017-09-06 10:47:48,692 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+8f4c633e-4c5a-4812-b6da-0f26347cf6f8 2017-09-06 10:47:48,696 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=8f4c633e-4c5a-4812-b6da-0f26347cf6f8, success=true]
+2580e350-6a20-4747-aad1-51bfaa346c9d 2017-09-06 10:47:48,711 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+2580e350-6a20-4747-aad1-51bfaa346c9d 2017-09-06 10:47:48,714 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+2580e350-6a20-4747-aad1-51bfaa346c9d 2017-09-06 10:47:48,715 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+2580e350-6a20-4747-aad1-51bfaa346c9d 2017-09-06 10:47:48,724 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=2580e350-6a20-4747-aad1-51bfaa346c9d, success=true]
+aafd31b2-cbfe-4a3c-8848-ff16d0c2b0ac 2017-09-06 10:48:18,765 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+83a8bb02-bd77-4325-b78e-17ccd4273a44 2017-09-06 10:48:18,815 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+434e386c-647d-4655-bc74-e91510c659b7 2017-09-06 10:48:18,998 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+47f1d5f8-3a50-45e5-9025-ac704275aa13 2017-09-06 10:48:19,112 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+f96ede3a-c22e-421c-bea9-8a4a6029edcd 2017-09-06 10:48:19,193 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+a1cc5f33-ed20-4aed-a1dd-8ecd1de5a643 2017-09-06 10:48:23,771 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+a1cc5f33-ed20-4aed-a1dd-8ecd1de5a643 2017-09-06 10:48:23,771 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+88436d46-4bce-4d5d-8cd7-e760969180f1 2017-09-06 10:48:23,782 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/app/list
+60500db9-ffa2-44af-a018-dfd6200613d4 2017-09-06 10:48:23,782 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/env/list
+88436d46-4bce-4d5d-8cd7-e760969180f1 2017-09-06 10:48:23,783 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/app/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+60500db9-ffa2-44af-a018-dfd6200613d4 2017-09-06 10:48:23,783 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/env/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+88436d46-4bce-4d5d-8cd7-e760969180f1 2017-09-06 10:48:23,787 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=88436d46-4bce-4d5d-8cd7-e760969180f1, success=true]
+60500db9-ffa2-44af-a018-dfd6200613d4 2017-09-06 10:48:23,790 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=60500db9-ffa2-44af-a018-dfd6200613d4, success=true]
+b7f3bd86-c408-44ba-a51f-f2a1dc5c67d6 2017-09-06 10:48:25,405 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+b7f3bd86-c408-44ba-a51f-f2a1dc5c67d6 2017-09-06 10:48:25,409 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b7f3bd86-c408-44ba-a51f-f2a1dc5c67d6 2017-09-06 10:48:25,410 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=null]
+b7f3bd86-c408-44ba-a51f-f2a1dc5c67d6 2017-09-06 10:48:25,414 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=b7f3bd86-c408-44ba-a51f-f2a1dc5c67d6, success=true]
+b4c1f3aa-3410-407f-a02f-92ff1b62ba0e 2017-09-06 10:48:26,345 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+b4c1f3aa-3410-407f-a02f-92ff1b62ba0e 2017-09-06 10:48:26,350 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b4c1f3aa-3410-407f-a02f-92ff1b62ba0e 2017-09-06 10:48:26,352 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+b4c1f3aa-3410-407f-a02f-92ff1b62ba0e 2017-09-06 10:48:26,356 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=b4c1f3aa-3410-407f-a02f-92ff1b62ba0e, success=true]
+faab3eae-4268-40c4-9f1d-9aa0335c9dfd 2017-09-06 10:48:26,369 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+faab3eae-4268-40c4-9f1d-9aa0335c9dfd 2017-09-06 10:48:26,372 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+faab3eae-4268-40c4-9f1d-9aa0335c9dfd 2017-09-06 10:48:26,373 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+faab3eae-4268-40c4-9f1d-9aa0335c9dfd 2017-09-06 10:48:26,387 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=faab3eae-4268-40c4-9f1d-9aa0335c9dfd, success=true]
+894f1b86-491e-4441-b23f-c6b624e98f55 2017-09-06 10:48:27,453 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/versionlist
+894f1b86-491e-4441-b23f-c6b624e98f55 2017-09-06 10:48:27,459 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/versionlist/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+894f1b86-491e-4441-b23f-c6b624e98f55 2017-09-06 10:48:27,462 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - VersionListForm [appId=3, envId=3]
+894f1b86-491e-4441-b23f-c6b624e98f55 2017-09-06 10:48:27,466 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=894f1b86-491e-4441-b23f-c6b624e98f55, success=true]
+245012fe-fbd4-496d-ba0d-4c8d2caaf665 2017-09-06 10:48:27,480 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/list
+245012fe-fbd4-496d-ba0d-4c8d2caaf665 2017-09-06 10:48:27,483 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+245012fe-fbd4-496d-ba0d-4c8d2caaf665 2017-09-06 10:48:27,484 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+245012fe-fbd4-496d-ba0d-4c8d2caaf665 2017-09-06 10:48:27,499 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=245012fe-fbd4-496d-ba0d-4c8d2caaf665, success=true]
+b3a209c7-c210-42f0-9d57-721a073827ca 2017-09-06 10:48:29,262 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/zk/153
+b3a209c7-c210-42f0-9d57-721a073827ca 2017-09-06 10:48:29,265 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/zk/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b3a209c7-c210-42f0-9d57-721a073827ca 2017-09-06 10:48:29,278 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=MachineListVo [datalist=[ZkDisconfDataItem [machine=jameszhou-PC_0_1f147111-d7de-488c-b977-47f9f90fbef6, value={"jedis.host":"127.0.0.1","jedis.port":"6379"}, errorList=[]]], errorNum=0, machineSize=1]]
+b23e3809-4faf-4ca7-af2c-d6d855c4d6a4 2017-09-06 10:48:31,382 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/zk/151
+b23e3809-4faf-4ca7-af2c-d6d855c4d6a4 2017-09-06 10:48:31,385 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/zk/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b23e3809-4faf-4ca7-af2c-d6d855c4d6a4 2017-09-06 10:48:31,399 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=MachineListVo [datalist=[ZkDisconfDataItem [machine=jameszhou-PC_0_781eed73-89c8-4965-a6c8-9d75604044d5, value={"dubbo.address":"zookeeper://127.0.0.1:2181"}, errorList=[]]], errorNum=0, machineSize=1]]
+f95bf064-33af-4c65-82a4-fdf91f537fc2 2017-09-06 10:48:32,934 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/zk/154
+f95bf064-33af-4c65-82a4-fdf91f537fc2 2017-09-06 10:48:32,936 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/zk/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+f95bf064-33af-4c65-82a4-fdf91f537fc2 2017-09-06 10:48:32,951 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=MachineListVo [datalist=[ZkDisconfDataItem [machine=jameszhou-PC_0_1f147111-d7de-488c-b977-47f9f90fbef6, value={"mq.userName":"admin","mq.brokerURL":"tcp://10.16.31.20:61616","queueName":"org.goshop.mqemail.producer.v1","mq.password":"123456","mq.pool.maxConnections":"10"}, errorList=[]]], errorNum=0, machineSize=1]]
+d3338d84-5f70-46cd-b65e-daa6884da7b8 2017-09-06 10:48:35,115 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/zk/155
+d3338d84-5f70-46cd-b65e-daa6884da7b8 2017-09-06 10:48:35,117 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/zk/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d3338d84-5f70-46cd-b65e-daa6884da7b8 2017-09-06 10:48:35,131 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=MachineListVo [datalist=null, errorNum=0, machineSize=0]]
+1a8ce9bc-d6ee-42c2-98c3-55cd8460da09 2017-09-06 10:48:51,758 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+826cc278-e822-4e83-917d-1f19d36c52af 2017-09-06 10:48:51,809 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+c3c10679-7a47-4e6a-bcc3-00e341f6b9e4 2017-09-06 10:48:52,029 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+c5cf4e43-8cc7-4c60-8eb8-83f7c5211ebf 2017-09-06 10:48:52,133 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+1dcad9c1-c7f8-4288-a70c-3198afe1ef2e 2017-09-06 10:48:52,212 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+f7329ed9-3edd-4494-a50a-d2ea552f14d1 2017-09-06 10:51:28,123 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+f7329ed9-3edd-4494-a50a-d2ea552f14d1 2017-09-06 10:51:28,128 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+8e0f8cd4-854d-4c1d-adf6-2646abc22275 2017-09-06 10:52:58,449 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+334f9924-5cbe-4866-92c9-35f891175a28 2017-09-06 10:52:58,493 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+9ee521f2-225e-4bee-85ed-d2c5029541e6 2017-09-06 10:52:58,696 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+06a22cd7-af09-4895-9cf8-427d7b50fc44 2017-09-06 10:52:58,769 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+e86d5e26-9c6a-4cb0-aba4-a191a6a475a4 2017-09-06 10:52:58,834 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+177e84b4-6b1a-4419-a5c7-930264064719 2017-09-06 10:53:18,442 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+16199d11-4653-4d99-ae85-6cac974ec7ec 2017-09-06 10:53:18,498 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+70365119-7aa0-4053-aef2-e30e15c65f37 2017-09-06 10:53:18,699 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+764a2a86-e222-4432-afcf-bf19d461070c 2017-09-06 10:53:18,787 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+f8a89220-0f5b-4745-ad71-9194cf591ba4 2017-09-06 10:53:18,845 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+1e0806c2-f536-4b87-96e4-db9b9481b586 2017-09-06 10:54:16,859 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+8353e9ac-5d2a-4d70-9d67-59c7f49b8aa2 2017-09-06 10:54:16,908 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+264ce34c-d2cd-4a99-bc82-1e120b4d594b 2017-09-06 10:54:17,185 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+03140b5c-cb8e-49ff-8cd8-400e7d893727 2017-09-06 10:54:17,353 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+ab9b8990-139a-41c4-aae6-74e13d6f5ae9 2017-09-06 10:58:09,862 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+c71caa17-0f96-4ad4-97a1-47ba4d6071e1 2017-09-06 10:58:09,911 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+3039d187-efda-4ec8-a328-b337db23ef29 2017-09-06 10:58:11,129 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+77487599-6d43-452e-9aea-fccd9df46ea5 2017-09-06 10:58:11,203 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+ 2017-09-06 11:00:24,566 [localhost-startStop-1-EventThread] WARN  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk Disconnected
+ 2017-09-06 11:00:32,081 [localhost-startStop-1-EventThread] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk SyncConnected
+ 2017-09-06 11:00:46,143 [localhost-startStop-1-EventThread] WARN  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk Disconnected
+ 2017-09-06 11:00:46,612 [localhost-startStop-1-EventThread] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk SyncConnected
+ 2017-09-06 11:00:46,952 [localhost-startStop-1-EventThread] WARN  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk Disconnected
+ 2017-09-06 11:01:52,237 [localhost-startStop-1-EventThread] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk SyncConnected
+558f836f-f0a9-45bd-9432-fe0e57224c6d 2017-09-06 11:02:29,534 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+558f836f-f0a9-45bd-9432-fe0e57224c6d 2017-09-06 11:02:29,535 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+8c200b5d-64b4-4777-a0f2-5351dd44c151 2017-09-06 11:02:29,545 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+8c200b5d-64b4-4777-a0f2-5351dd44c151 2017-09-06 11:02:29,546 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+8c200b5d-64b4-4777-a0f2-5351dd44c151 2017-09-06 11:02:29,550 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181, createTime=20170905173206, modifyTime=201709051756]]
+d4270ed0-b0dc-4eff-a388-55e807f59cd6 2017-09-06 11:02:29,613 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+d4270ed0-b0dc-4eff-a388-55e807f59cd6 2017-09-06 11:02:29,614 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d4270ed0-b0dc-4eff-a388-55e807f59cd6 2017-09-06 11:02:29,615 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+d4270ed0-b0dc-4eff-a388-55e807f59cd6 2017-09-06 11:02:29,618 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=d4270ed0-b0dc-4eff-a388-55e807f59cd6, success=true]
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:49,977 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/filetext/151
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:49,980 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/filetext/{configId}/, method:PUT, UserId:6, RoleId:2, Is priviledged:true
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:49,988 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigUpdateController - receive file: dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:50,071 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.utils.email.LogMailBean - send to 274410087@qq.com
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:50,071 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.utils.email.LogMailBean - title:  config update
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:50,072 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.utils.email.LogMailBean - contentConfig(type=0, status=1, name=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181, appId=3, version=1.0.0, envId=3, createTime=20170905173206, updateTime=20170905175636)<br/><br/><br/>点击<a href='http://disconf.com/modifyFile.html?configId=151'> 这里 </a> 进入查看<br/><br/> <span style='color:#FF0000'>Change info: </span><br/>[position: 0, size: 1, lines: [dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183]]<br/><br/><br/><br/><span style='color:#FF0000'>Old value:</span><br/>dubbo.address=zookeeper://127.0.0.1:2181<br/><br/><br/><span style='color:#FF0000'>New value:</span><br/>dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:50,073 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.utils.email.LogMailBean - Visitor [loginUserName=admin, roleId=2, appIds=null]
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:52,801 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.utils.email.MailBean - send mail start:1504667090075 end :1504667092801
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:52,802 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigUpdateController - update 151 ok
+cdb3f50f-ea1e-4d90-b917-b72aa126202e 2017-09-06 11:04:53,026 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=修改成功，邮件通知成功]
+a5aa5e2f-d9f9-4ec4-ac00-620499635cf5 2017-09-06 11:04:53,031 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+7bb8e820-bea5-4e21-a2e0-6f68745d81e9 2017-09-06 11:04:53,041 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+ae33f10d-f05d-4e31-9799-c77f030f4b7f 2017-09-06 11:04:53,060 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+ae33f10d-f05d-4e31-9799-c77f030f4b7f 2017-09-06 11:04:53,061 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+ae33f10d-f05d-4e31-9799-c77f030f4b7f 2017-09-06 11:04:53,071 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183, createTime=20170905173206, modifyTime=201709061104]]
+38ceafc6-4513-4a32-a0ee-01c03ae0e944 2017-09-06 11:04:53,078 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+38ceafc6-4513-4a32-a0ee-01c03ae0e944 2017-09-06 11:04:53,082 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+38ceafc6-4513-4a32-a0ee-01c03ae0e944 2017-09-06 11:04:53,083 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+38ceafc6-4513-4a32-a0ee-01c03ae0e944 2017-09-06 11:04:53,087 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=38ceafc6-4513-4a32-a0ee-01c03ae0e944, success=true]
+53fe2102-86aa-4f80-88b0-2bd713c0f950 2017-09-06 11:05:06,160 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+b20360ab-30c8-40bb-b827-2b04c1ffbc0f 2017-09-06 11:05:06,161 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+53fe2102-86aa-4f80-88b0-2bd713c0f950 2017-09-06 11:05:06,162 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+b20360ab-30c8-40bb-b827-2b04c1ffbc0f 2017-09-06 11:05:06,162 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b20360ab-30c8-40bb-b827-2b04c1ffbc0f 2017-09-06 11:05:06,168 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183, createTime=20170905173206, modifyTime=201709061104]]
+b08d21ab-aafb-465e-bb7d-38f9d4d41d24 2017-09-06 11:05:06,243 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+b08d21ab-aafb-465e-bb7d-38f9d4d41d24 2017-09-06 11:05:06,246 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b08d21ab-aafb-465e-bb7d-38f9d4d41d24 2017-09-06 11:05:06,247 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+b08d21ab-aafb-465e-bb7d-38f9d4d41d24 2017-09-06 11:05:06,252 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=b08d21ab-aafb-465e-bb7d-38f9d4d41d24, success=true]
+785cf06c-c477-43b1-82e5-57f23fe4b5e3 2017-09-06 11:05:07,044 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+e8952184-1baf-4db5-a0b1-58c7f5171628 2017-09-06 11:05:07,044 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/152
+785cf06c-c477-43b1-82e5-57f23fe4b5e3 2017-09-06 11:05:07,045 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+e8952184-1baf-4db5-a0b1-58c7f5171628 2017-09-06 11:05:07,045 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+e8952184-1baf-4db5-a0b1-58c7f5171628 2017-09-06 11:05:07,049 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=152, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=email.properties, value=#SMTP配置
+mail.host=smtp.126.com
+mail.port=25
+mail.username=foreyer_test@126.com
+mail.password=g201009719
+mail.smtp.auth=true
+mail.smtp.timeout=30000
+mail.default.from=foreyer_test@126.com
+, createTime=20170905175752, modifyTime=201709051757]]
+5a550ad8-cf4b-4ed9-9469-a0bafc8afabd 2017-09-06 11:05:07,113 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+5a550ad8-cf4b-4ed9-9469-a0bafc8afabd 2017-09-06 11:05:07,114 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+5a550ad8-cf4b-4ed9-9469-a0bafc8afabd 2017-09-06 11:05:07,115 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+5a550ad8-cf4b-4ed9-9469-a0bafc8afabd 2017-09-06 11:05:07,118 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=5a550ad8-cf4b-4ed9-9469-a0bafc8afabd, success=true]
+25aa64e3-a032-4b29-8044-60c3b7f3c70f 2017-09-06 11:05:08,291 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+91580716-7e80-4b6e-8fb8-9ad91473481a 2017-09-06 11:05:08,291 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/155
+25aa64e3-a032-4b29-8044-60c3b7f3c70f 2017-09-06 11:05:08,292 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+91580716-7e80-4b6e-8fb8-9ad91473481a 2017-09-06 11:05:08,292 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+91580716-7e80-4b6e-8fb8-9ad91473481a 2017-09-06 11:05:08,296 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=155, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jdbc.properties, value=jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://127.0.0.1:3306/vacomall?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+jdbc.username=root
+jdbc.password=root
+validationQuery=SELECT 1, createTime=20170905175811, modifyTime=201709051758]]
+3c7d2e9a-83c3-4dfe-9fcc-4de5fd730c98 2017-09-06 11:05:08,356 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+3c7d2e9a-83c3-4dfe-9fcc-4de5fd730c98 2017-09-06 11:05:08,357 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+3c7d2e9a-83c3-4dfe-9fcc-4de5fd730c98 2017-09-06 11:05:08,358 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+3c7d2e9a-83c3-4dfe-9fcc-4de5fd730c98 2017-09-06 11:05:08,360 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=3c7d2e9a-83c3-4dfe-9fcc-4de5fd730c98, success=true]
+04458958-40a2-43a6-afe5-7c48bd6bf206 2017-09-06 11:05:08,956 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+27ce52f2-7770-46c2-9a84-9d8fe74f8ae4 2017-09-06 11:05:08,956 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/153
+27ce52f2-7770-46c2-9a84-9d8fe74f8ae4 2017-09-06 11:05:08,957 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+04458958-40a2-43a6-afe5-7c48bd6bf206 2017-09-06 11:05:08,958 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+27ce52f2-7770-46c2-9a84-9d8fe74f8ae4 2017-09-06 11:05:08,964 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=153, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jedis.properties, value=jedis.host=127.0.0.1
+jedis.port=6379, createTime=20170905175803, modifyTime=201709051758]]
+013bb0e1-0c56-41b1-8a35-3b6a6f624506 2017-09-06 11:05:09,015 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+013bb0e1-0c56-41b1-8a35-3b6a6f624506 2017-09-06 11:05:09,017 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+013bb0e1-0c56-41b1-8a35-3b6a6f624506 2017-09-06 11:05:09,017 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+013bb0e1-0c56-41b1-8a35-3b6a6f624506 2017-09-06 11:05:09,021 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=013bb0e1-0c56-41b1-8a35-3b6a6f624506, success=true]
+31b4f46a-cd76-4a26-b9cb-0346f4433b29 2017-09-06 11:05:10,065 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+38d3b907-d472-4343-9a3d-d32594633113 2017-09-06 11:05:10,066 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/154
+31b4f46a-cd76-4a26-b9cb-0346f4433b29 2017-09-06 11:05:10,066 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+38d3b907-d472-4343-9a3d-d32594633113 2017-09-06 11:05:10,066 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+38d3b907-d472-4343-9a3d-d32594633113 2017-09-06 11:05:10,071 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=154, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=mq.properties, value=## MQ
+#mq.brokerURL=tcp://192.168.1.177:61616
+#mq.userName=wusc
+#mq.password=wusc.123
+
+mq.brokerURL=tcp://10.16.31.20:61616
+mq.userName=admin
+mq.password=123456
+mq.pool.maxConnections=10
+#queueName
+queueName=org.goshop.mqemail.producer.v1, createTime=20170905175807, modifyTime=201709051758]]
+c8ea58cb-fddb-4116-9ce0-b9586335ae40 2017-09-06 11:05:10,120 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+c8ea58cb-fddb-4116-9ce0-b9586335ae40 2017-09-06 11:05:10,121 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+c8ea58cb-fddb-4116-9ce0-b9586335ae40 2017-09-06 11:05:10,122 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+c8ea58cb-fddb-4116-9ce0-b9586335ae40 2017-09-06 11:05:10,125 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=c8ea58cb-fddb-4116-9ce0-b9586335ae40, success=true]
+a8a5bccf-d683-444e-957e-bd931b5d61c9 2017-09-06 11:05:11,895 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+a8a5bccf-d683-444e-957e-bd931b5d61c9 2017-09-06 11:05:11,896 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+3f95fbf1-77d9-4e41-861e-a8c5d9376be9 2017-09-06 11:05:11,896 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+3f95fbf1-77d9-4e41-861e-a8c5d9376be9 2017-09-06 11:05:11,897 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+3f95fbf1-77d9-4e41-861e-a8c5d9376be9 2017-09-06 11:05:11,901 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183, createTime=20170905173206, modifyTime=201709061104]]
+5d4ad6e2-68b0-4abb-b74e-5fb6ab8a11f2 2017-09-06 11:05:11,951 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+5d4ad6e2-68b0-4abb-b74e-5fb6ab8a11f2 2017-09-06 11:05:11,953 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+5d4ad6e2-68b0-4abb-b74e-5fb6ab8a11f2 2017-09-06 11:05:11,953 [http-nio-8015-exec-4] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+5d4ad6e2-68b0-4abb-b74e-5fb6ab8a11f2 2017-09-06 11:05:11,956 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=5d4ad6e2-68b0-4abb-b74e-5fb6ab8a11f2, success=true]
+4bd4ff69-a801-47c4-ad66-0aaafe708fed 2017-09-06 11:06:22,874 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+4f08c6fa-7d11-4e2f-b30e-5c35eda4b325 2017-09-06 11:06:22,875 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+4bd4ff69-a801-47c4-ad66-0aaafe708fed 2017-09-06 11:06:22,875 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+4f08c6fa-7d11-4e2f-b30e-5c35eda4b325 2017-09-06 11:06:22,876 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+4f08c6fa-7d11-4e2f-b30e-5c35eda4b325 2017-09-06 11:06:22,880 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183, createTime=20170905173206, modifyTime=201709061104]]
+d20cf97a-3436-4074-981e-7cd334221f59 2017-09-06 11:06:22,945 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+d20cf97a-3436-4074-981e-7cd334221f59 2017-09-06 11:06:22,947 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+d20cf97a-3436-4074-981e-7cd334221f59 2017-09-06 11:06:22,947 [http-nio-8015-exec-7] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+d20cf97a-3436-4074-981e-7cd334221f59 2017-09-06 11:06:22,951 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=d20cf97a-3436-4074-981e-7cd334221f59, success=true]
+371a0389-94c0-4a43-b3a5-2ef52e8e16cb 2017-09-06 11:06:26,709 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+b83f9570-bbf4-43f1-b85d-e51d2272ee38 2017-09-06 11:06:26,710 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/152
+371a0389-94c0-4a43-b3a5-2ef52e8e16cb 2017-09-06 11:06:26,710 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+b83f9570-bbf4-43f1-b85d-e51d2272ee38 2017-09-06 11:06:26,711 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+b83f9570-bbf4-43f1-b85d-e51d2272ee38 2017-09-06 11:06:26,715 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=152, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=email.properties, value=#SMTP配置
+mail.host=smtp.126.com
+mail.port=25
+mail.username=foreyer_test@126.com
+mail.password=g201009719
+mail.smtp.auth=true
+mail.smtp.timeout=30000
+mail.default.from=foreyer_test@126.com
+, createTime=20170905175752, modifyTime=201709051757]]
+96b2bef5-526e-4396-a6c9-eddd88c0f7d6 2017-09-06 11:06:26,773 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+96b2bef5-526e-4396-a6c9-eddd88c0f7d6 2017-09-06 11:06:26,774 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+96b2bef5-526e-4396-a6c9-eddd88c0f7d6 2017-09-06 11:06:26,775 [http-nio-8015-exec-10] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+96b2bef5-526e-4396-a6c9-eddd88c0f7d6 2017-09-06 11:06:26,778 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=96b2bef5-526e-4396-a6c9-eddd88c0f7d6, success=true]
+68c72bb5-e6cd-4e61-9dc9-7945c7326950 2017-09-06 11:06:27,545 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+7b8f9113-1c56-428e-8077-ecd6318f4719 2017-09-06 11:06:27,546 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/155
+68c72bb5-e6cd-4e61-9dc9-7945c7326950 2017-09-06 11:06:27,546 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+7b8f9113-1c56-428e-8077-ecd6318f4719 2017-09-06 11:06:27,548 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+7b8f9113-1c56-428e-8077-ecd6318f4719 2017-09-06 11:06:27,554 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=155, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jdbc.properties, value=jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://127.0.0.1:3306/vacomall?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+jdbc.username=root
+jdbc.password=root
+validationQuery=SELECT 1, createTime=20170905175811, modifyTime=201709051758]]
+7433b9b4-e564-465d-825b-13ac11518a42 2017-09-06 11:06:27,604 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+7433b9b4-e564-465d-825b-13ac11518a42 2017-09-06 11:06:27,606 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+7433b9b4-e564-465d-825b-13ac11518a42 2017-09-06 11:06:27,606 [http-nio-8015-exec-2] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+7433b9b4-e564-465d-825b-13ac11518a42 2017-09-06 11:06:27,611 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=7433b9b4-e564-465d-825b-13ac11518a42, success=true]
+ff2f0ebf-a41d-46d3-aa0a-eceeed989196 2017-09-06 11:06:28,140 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+fb327053-4a30-4836-8bff-ed954ebafb93 2017-09-06 11:06:28,141 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/153
+ff2f0ebf-a41d-46d3-aa0a-eceeed989196 2017-09-06 11:06:28,141 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+fb327053-4a30-4836-8bff-ed954ebafb93 2017-09-06 11:06:28,142 [http-nio-8015-exec-3] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+fb327053-4a30-4836-8bff-ed954ebafb93 2017-09-06 11:06:28,152 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=153, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=jedis.properties, value=jedis.host=127.0.0.1
+jedis.port=6379, createTime=20170905175803, modifyTime=201709051758]]
+3d5038aa-d2aa-4871-876d-7cc93188b576 2017-09-06 11:06:28,198 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+3d5038aa-d2aa-4871-876d-7cc93188b576 2017-09-06 11:06:28,200 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+3d5038aa-d2aa-4871-876d-7cc93188b576 2017-09-06 11:06:28,200 [http-nio-8015-exec-5] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+3d5038aa-d2aa-4871-876d-7cc93188b576 2017-09-06 11:06:28,203 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=3d5038aa-d2aa-4871-876d-7cc93188b576, success=true]
+46a72971-e139-4210-ae83-890bcac30a86 2017-09-06 11:06:28,891 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+45627752-661f-4aba-aac5-c93168ae5df5 2017-09-06 11:06:28,891 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/154
+46a72971-e139-4210-ae83-890bcac30a86 2017-09-06 11:06:28,891 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+45627752-661f-4aba-aac5-c93168ae5df5 2017-09-06 11:06:28,892 [http-nio-8015-exec-6] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+45627752-661f-4aba-aac5-c93168ae5df5 2017-09-06 11:06:28,896 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=154, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=mq.properties, value=## MQ
+#mq.brokerURL=tcp://192.168.1.177:61616
+#mq.userName=wusc
+#mq.password=wusc.123
+
+mq.brokerURL=tcp://10.16.31.20:61616
+mq.userName=admin
+mq.password=123456
+mq.pool.maxConnections=10
+#queueName
+queueName=org.goshop.mqemail.producer.v1, createTime=20170905175807, modifyTime=201709051758]]
+376d9b4a-e178-439a-aa55-8c40eae265c1 2017-09-06 11:06:28,954 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+376d9b4a-e178-439a-aa55-8c40eae265c1 2017-09-06 11:06:28,957 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+376d9b4a-e178-439a-aa55-8c40eae265c1 2017-09-06 11:06:28,958 [http-nio-8015-exec-8] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+376d9b4a-e178-439a-aa55-8c40eae265c1 2017-09-06 11:06:28,962 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=376d9b4a-e178-439a-aa55-8c40eae265c1, success=true]
+fc673d46-656c-4218-a606-5cd435eed9a8 2017-09-06 11:06:30,210 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/account/session
+3564acdc-8499-4963-a590-93934c051d4f 2017-09-06 11:06:30,210 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/151
+fc673d46-656c-4218-a606-5cd435eed9a8 2017-09-06 11:06:30,211 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObject(result={visitor=VisitorVo [id=6, name=admin, role=null]})
+3564acdc-8499-4963-a590-93934c051d4f 2017-09-06 11:06:30,211 [http-nio-8015-exec-9] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/{configId}/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+3564acdc-8499-4963-a590-93934c051d4f 2017-09-06 11:06:30,214 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonSimpleObject [result=ConfListVo [configId=151, appName=vacomall, appId=3, version=1.0.0, envId=3, envName=local, type=配置文件, typeId=0, key=dubbo.properties, value=dubbo.address=zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183, createTime=20170905173206, modifyTime=201709061104]]
+ba03bc4a-38c9-459c-b0bb-f2f226fc5deb 2017-09-06 11:06:30,278 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/web/config/simple/list
+ba03bc4a-38c9-459c-b0bb-f2f226fc5deb 2017-09-06 11:06:30,279 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.service.roleres.service.RoleResourceAspect - Accessing URL:/api/web/config/simple/list/, method:GET, UserId:6, RoleId:2, Is priviledged:true
+ba03bc4a-38c9-459c-b0bb-f2f226fc5deb 2017-09-06 11:06:30,280 [http-nio-8015-exec-1] INFO  com.baidu.disconf.web.web.config.controller.ConfigReadController - ConfListForm(appId=3, version=1.0.0, envId=3)
+ba03bc4a-38c9-459c-b0bb-f2f226fc5deb 2017-09-06 11:06:30,285 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.vo.JsonObjectUtils - JsonObjectBase [message={}, sessionId=ba03bc4a-38c9-459c-b0bb-f2f226fc5deb, success=true]
+0c11f3e1-93b6-45db-b678-27f989233b2f 2017-09-06 11:21:38,166 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+0c11f3e1-93b6-45db-b678-27f989233b2f 2017-09-06 11:21:38,202 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+5d3bc20b-80af-47e9-a882-d429435f6dd0 2017-09-06 11:51:48,265 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+5d3bc20b-80af-47e9-a882-d429435f6dd0 2017-09-06 11:51:48,281 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+b6a94351-da85-4878-8e80-c3ac1290d968 2017-09-06 11:59:51,440 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+3a8194ef-670a-49fc-a712-30e441b4ce01 2017-09-06 11:59:51,482 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+88289f8d-621c-4b9b-a198-12337612d0a6 2017-09-06 11:59:51,719 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+18e3dcf7-9b11-480b-905f-4c29eb249084 2017-09-06 11:59:51,863 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+9c505abb-4dff-4d3f-b3d6-4bf2bb732cd9 2017-09-06 12:09:36,068 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+f14103ac-58e6-46e1-8c0b-be930322bd2b 2017-09-06 12:09:36,123 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+44c0ff84-aa12-42e2-a64d-4ca25cc189f8 2017-09-06 12:09:36,265 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+b9267700-051d-4d28-b78d-5153ed895016 2017-09-06 12:15:24,124 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+04350ec2-d660-4c68-addd-9b65b6800882 2017-09-06 12:15:24,189 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+f8046d7e-b0fb-435b-b4d6-a892ace0b90d 2017-09-06 12:15:24,430 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+74731689-124d-4b50-9e71-38a52574bbfd 2017-09-06 12:21:58,332 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+74731689-124d-4b50-9e71-38a52574bbfd 2017-09-06 12:21:58,347 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+66686f91-ab18-4d13-b850-d56f5e7b1e12 2017-09-06 12:30:12,093 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+519a7bf9-223d-4f19-a63a-0d1b75e560b2 2017-09-06 12:30:12,148 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+0ea92926-b6e1-4d89-9d96-6ebfd909142c 2017-09-06 12:30:12,333 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+ac781f6c-5de1-4391-8024-d598376573e3 2017-09-06 12:52:08,402 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+ac781f6c-5de1-4391-8024-d598376573e3 2017-09-06 12:52:08,424 [proScheduler-2] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+16d143c2-40b7-418b-91c7-2b4bf8c53a8f 2017-09-06 13:09:16,395 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+8f6ecbf9-e824-427d-becb-6e461a1072f8 2017-09-06 13:09:16,460 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+d52afbc7-7ae6-45ce-bd57-df85ff13ab1a 2017-09-06 13:09:16,743 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+c7e6992c-acf3-4b3c-9931-3dc674bf4d68 2017-09-06 13:10:31,649 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+475b38e2-2171-4b47-a6ca-6b0b4ae4cfd4 2017-09-06 13:10:31,706 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+d4648bc2-4a71-4287-a03b-d62b0d4bbfae 2017-09-06 13:10:31,867 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+e8309cc9-6f42-49bf-9f1a-211fa7f6f13c 2017-09-06 13:22:18,481 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+e8309cc9-6f42-49bf-9f1a-211fa7f6f13c 2017-09-06 13:22:18,488 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+94b919bb-2468-410a-b459-a6bcf9f7d476 2017-09-06 13:38:11,052 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+3c96e986-c8dc-448f-a63b-c423907128a0 2017-09-06 13:38:11,122 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+8d3d0b3a-d3b8-4202-914c-c3c76505490a 2017-09-06 13:38:11,318 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+fb4db714-7a65-4e37-854e-2fb09c3c384d 2017-09-06 13:52:28,531 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+fb4db714-7a65-4e37-854e-2fb09c3c384d 2017-09-06 13:52:28,553 [proScheduler-4] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+161f60b4-4238-4eaf-aa57-8e13db5307f6 2017-09-06 14:22:38,612 [proScheduler-5] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+161f60b4-4238-4eaf-aa57-8e13db5307f6 2017-09-06 14:22:38,634 [proScheduler-5] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+ca63c66d-2b97-4d0f-914e-060d62730a1a 2017-09-06 14:52:48,690 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+ca63c66d-2b97-4d0f-914e-060d62730a1a 2017-09-06 14:52:48,708 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+a61cde0f-8b5f-474b-855e-e0ff070ad08b 2017-09-06 15:22:09,443 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+6d8df444-3e33-4b8b-9715-b90656cdf9e4 2017-09-06 15:22:09,501 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+12a7a84e-5992-489a-8d42-d2a4d829c3d6 2017-09-06 15:22:09,690 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+f131b4df-5a47-43b7-b97c-87a0b431bcbf 2017-09-06 15:22:51,637 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+e08aa47e-4dc3-44d2-8e9c-e8561dd97e97 2017-09-06 15:22:51,706 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+21fccb44-23cc-4cc5-bdc1-3dd184963542 2017-09-06 15:22:51,842 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+f300fe64-6439-4adc-844d-db98ca860fdc 2017-09-06 15:22:58,753 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+f300fe64-6439-4adc-844d-db98ca860fdc 2017-09-06 15:22:58,758 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+3098598b-bd5e-47db-89c6-0b99fbef3598 2017-09-06 15:47:56,091 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+72629dc7-2a22-496a-93f1-75e9a6024883 2017-09-06 15:47:56,159 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+5978cf20-0f7d-4a21-ac94-fb153f274ea0 2017-09-06 15:47:56,351 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+aab8f717-5c61-45ee-b0fb-a77a68c8e3fa 2017-09-06 15:53:08,797 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+aab8f717-5c61-45ee-b0fb-a77a68c8e3fa 2017-09-06 15:53:08,817 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+77436c1b-4193-48ac-ad86-467b55836e68 2017-09-06 16:03:06,836 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+38b19e5e-e59b-4484-99cc-d15fab73008a 2017-09-06 16:03:06,904 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+cb065117-ac63-4a6a-8c4a-d00e9601abd6 2017-09-06 16:03:07,039 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+ac56c917-bf9b-4430-bad6-296eb3dbed14 2017-09-06 16:23:18,875 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+ac56c917-bf9b-4430-bad6-296eb3dbed14 2017-09-06 16:23:18,893 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+7e2cafde-90e1-45b0-87ef-f7619f937d37 2017-09-06 16:31:55,247 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+8aaa4dfa-e649-4b22-bd12-3fced104498c 2017-09-06 16:31:55,304 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+2d23a130-ec69-4735-a2ee-e13f1aa435e3 2017-09-06 16:31:55,440 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+336fa3bd-5bf0-4f99-8483-c40747ef30cf 2017-09-06 16:32:44,468 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+e734946f-43ae-47ca-8897-cc6b97715cfc 2017-09-06 16:32:44,525 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+b392b141-2830-4ab4-8ed7-f0005750220b 2017-09-06 16:32:44,691 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+a258e7be-5d47-465b-86b9-6d6a212f4237 2017-09-06 16:53:28,946 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+a258e7be-5d47-465b-86b9-6d6a212f4237 2017-09-06 16:53:28,965 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+22760d09-5c1b-440d-8890-a8b0b966e6cc 2017-09-06 16:56:45,765 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+299c8fba-e019-42c6-9abe-8588a0fc60e2 2017-09-06 16:56:45,827 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+0aceb021-b8c7-44bf-b1c4-639f31b57462 2017-09-06 16:56:46,010 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+94d0d8a8-82d8-436e-95ed-e603488a9ded 2017-09-06 17:08:40,054 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+d602aa2d-38bb-45f6-a6c2-f372963b0bb7 2017-09-06 17:08:40,113 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+658b2494-e1b5-4867-876d-5560356082c2 2017-09-06 17:08:40,310 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+47349c3f-baa6-438f-a407-184daf977bf3 2017-09-06 17:09:14,598 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+39843dd2-122f-452f-a612-652282d0a305 2017-09-06 17:09:14,647 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+488229c5-02e1-474b-9c19-397dcd560370 2017-09-06 17:09:14,883 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+4362da2f-36a9-453a-a158-2ad55d1a7fe7 2017-09-06 17:09:14,943 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+2af6a389-aa9b-4a05-bb6e-102a53abeb22 2017-09-06 17:09:22,635 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+694944d1-1722-4715-bc3b-4a8b7bf7d8b4 2017-09-06 17:09:22,689 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+917d965b-5a89-4af2-960c-a497bf5fa68e 2017-09-06 17:09:22,857 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+8ff865f9-192d-472d-abf7-f3a0d85f99aa 2017-09-06 17:23:39,005 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+8ff865f9-192d-472d-abf7-f3a0d85f99aa 2017-09-06 17:23:39,018 [proScheduler-3] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0

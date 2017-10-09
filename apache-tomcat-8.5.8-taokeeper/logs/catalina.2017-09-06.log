@@ -1,0 +1,139 @@
+06-Sep-2017 10:19:06.914 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8\conf\logging.properties
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8\temp
+06-Sep-2017 10:19:06.930 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+06-Sep-2017 10:19:06.946 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+06-Sep-2017 10:19:06.946 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+06-Sep-2017 10:19:07.398 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+06-Sep-2017 10:19:07.476 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8015"]
+06-Sep-2017 10:19:07.601 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Sep-2017 10:19:07.601 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Sep-2017 10:19:07.601 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Sep-2017 10:19:07.601 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1146 ms
+06-Sep-2017 10:19:07.632 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+06-Sep-2017 10:19:07.632 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+06-Sep-2017 10:19:07.694 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8\webapps\ROOT
+06-Sep-2017 10:19:11.101 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Sep-2017 10:21:02.968 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8\conf\logging.properties
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8\temp
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+06-Sep-2017 10:21:02.983 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+06-Sep-2017 10:21:02.999 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+06-Sep-2017 10:21:03.389 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+06-Sep-2017 10:21:03.467 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8015"]
+06-Sep-2017 10:21:03.592 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Sep-2017 10:21:03.592 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Sep-2017 10:21:03.592 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Sep-2017 10:21:03.592 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 826 ms
+06-Sep-2017 10:21:03.607 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+06-Sep-2017 10:21:03.607 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+06-Sep-2017 10:21:03.623 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8\webapps\ROOT
+06-Sep-2017 10:21:05.144 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Sep-2017 10:21:08.232 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8\webapps\ROOT has finished in 4,609 ms
+06-Sep-2017 10:21:08.232 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8015]
+06-Sep-2017 10:21:08.248 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+06-Sep-2017 10:21:08.248 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 4649 ms
+06-Sep-2017 18:01:10.966 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.8
+06-Sep-2017 18:01:10.969 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 3 2016 21:14:13 UTC
+06-Sep-2017 18:01:10.969 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.8.0
+06-Sep-2017 18:01:10.970 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+06-Sep-2017 18:01:10.970 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+06-Sep-2017 18:01:10.970 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Sep-2017 18:01:10.970 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_131\jre
+06-Sep-2017 18:01:10.970 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+06-Sep-2017 18:01:10.971 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Sep-2017 18:01:10.971 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+06-Sep-2017 18:01:10.972 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+06-Sep-2017 18:01:10.972 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Sep-2017 18:01:10.972 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Sep-2017 18:01:10.973 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\conf\logging.properties
+06-Sep-2017 18:01:10.973 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Sep-2017 18:01:10.974 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DconfigFilePath=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT\config\taokeeper-monitor-config.properties
+06-Sep-2017 18:01:10.978 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+06-Sep-2017 18:01:10.981 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor
+06-Sep-2017 18:01:10.984 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\temp
+06-Sep-2017 18:01:10.988 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+06-Sep-2017 18:01:10.991 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+06-Sep-2017 18:01:10.993 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+06-Sep-2017 18:01:11.424 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2j  26 Sep 2016)
+06-Sep-2017 18:01:11.506 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8016"]
+06-Sep-2017 18:01:11.631 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Sep-2017 18:01:11.633 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8010"]
+06-Sep-2017 18:01:11.635 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Sep-2017 18:01:11.635 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 926 ms
+06-Sep-2017 18:01:11.655 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+06-Sep-2017 18:01:11.655 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.8
+06-Sep-2017 18:01:11.663 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT
+06-Sep-2017 18:01:13.948 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Sep-2017 18:01:42.801 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory G:\app_server\apache-tomcat-8.5.8-taokeeper-monitor\webapps\ROOT has finished in 31,138 ms
+06-Sep-2017 18:01:42.804 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8016]
+06-Sep-2017 18:01:42.813 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8010]
+06-Sep-2017 18:01:42.816 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 31177 ms
+06-Sep-2017 18:02:17.285 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8016"]
+06-Sep-2017 18:02:17.343 信息 [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8010"]
+06-Sep-2017 18:02:17.396 信息 [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+06-Sep-2017 18:02:17.453 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Sep-2017 18:02:17.455 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperClusterMapDumpJob.run(ZooKeeperClusterMapDumpJob.java:26)
+ java.lang.Thread.run(Thread.java:748)
+06-Sep-2017 18:02:17.456 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [pool-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+06-Sep-2017 18:02:17.458 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.runable.ClientThroughputStatJob.run(ClientThroughputStatJob.java:96)
+ java.lang.Thread.run(Thread.java:748)
+06-Sep-2017 18:02:17.459 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperALiveCheckerJob.run(ZooKeeperALiveCheckerJob.java:85)
+ java.lang.Thread.run(Thread.java:748)
+06-Sep-2017 18:02:17.460 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.ZooKeeperStatusCollectJob.run(ZooKeeperStatusCollectJob.java:92)
+ java.lang.Thread.run(Thread.java:748)
+06-Sep-2017 18:02:17.461 警告 [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Thread#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.taobao.taokeeper.monitor.core.task.HostPerformanceCollectTask.run(HostPerformanceCollectTask.java:82)
+ java.lang.Thread.run(Thread.java:748)
+06-Sep-2017 18:02:17.469 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8016"]
+06-Sep-2017 18:02:17.470 信息 [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8010"]
+06-Sep-2017 18:02:17.472 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8016"]
+06-Sep-2017 18:02:17.473 信息 [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8010"]

@@ -1,0 +1,65 @@
+ 2017-09-19 16:30:11,939 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener start...
+ 2017-09-19 16:30:11,944 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.StartupListener - Load StartupListener end...
+ 2017-09-19 16:30:13,805 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis1> <server: 127.0.0.1:6379> object created. Connection pool will be initiated when calling.
+ 2017-09-19 16:30:13,834 [localhost-startStop-1] INFO  com.github.knightliao.apollo.redis.RedisClient - New Jedis pool <client: BeidouRedis2> <server: 127.0.0.1:6380> object created. Connection pool will be initiated when calling.
+ 2017-09-19 16:30:14,909 [localhost-startStop-1-EventThread] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zk SyncConnected
+ 2017-09-19 16:30:14,910 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.inner.ConnectionWatcher - zookeeper: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 , connected.
+ 2017-09-19 16:30:14,911 [localhost-startStop-1] INFO  com.baidu.disconf.core.common.zookeeper.ZookeeperMgr - zoo prefix: /disconf
+ 2017-09-19 16:30:15,373 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.ContextListener - start to load ContextListener
+ 2017-09-19 16:30:15,374 [localhost-startStop-1] INFO  com.baidu.dsp.common.listener.ContextListener - end of ContextListener
+5d5e9228-2572-4a09-86c1-fca74ee0cef3 2017-09-19 16:30:25,687 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+5d5e9228-2572-4a09-86c1-fca74ee0cef3 2017-09-19 16:30:25,721 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+c6d1fca1-9049-4d38-8015-49ade974afdd 2017-09-19 16:32:26,788 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+622a8e1a-ad86-4ed2-b5ee-0a5e80cf40c8 2017-09-19 16:32:26,788 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+45f2bad6-2588-42b0-bece-74a61f5b45e4 2017-09-19 16:32:26,912 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+ad047dea-4242-40e1-ae54-8b4152ce103e 2017-09-19 16:32:26,941 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+50524acf-9559-44a1-87f2-91310f50d305 2017-09-19 16:32:27,282 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+06035ca6-2ec7-41c4-8fb8-2d55fdee408e 2017-09-19 16:32:27,282 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+677c727d-d7e7-40d9-a4c9-11fd6d58ed38 2017-09-19 16:32:27,434 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+df77613b-0c1f-418d-9e6b-71098c504278 2017-09-19 16:32:27,444 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+7f2ad278-e7b9-4991-9151-21b78ea66719 2017-09-19 16:32:42,281 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+49fc1529-a052-4b03-babc-912392bee686 2017-09-19 16:32:42,357 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+099e13dd-3127-43b2-9bf1-5579ce8bafd4 2017-09-19 16:32:42,607 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+08de75e6-3a2b-4d27-b60c-c9418dcd70be 2017-09-19 16:32:42,711 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+3cd75487-c615-4efe-898c-ffdb1d341895 2017-09-19 16:42:06,111 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+a9a4a858-994d-492f-80d8-a4a7ccd79431 2017-09-19 16:42:06,205 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+06675ec0-5430-473e-b476-d6ec7979c91c 2017-09-19 16:42:06,498 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+413ec88f-4fe8-43e1-add5-9d945ab1d12c 2017-09-19 16:42:06,667 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+433f5fcc-c910-43e6-ab41-141e071e19f8 2017-09-19 16:46:44,101 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+59b11854-8543-44b6-909a-21344f93df25 2017-09-19 16:46:44,163 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+2121345e-0bd0-49ed-8598-d549163b995f 2017-09-19 16:46:44,473 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+00bacd85-d24d-47bb-91f7-0e516c0ae496 2017-09-19 16:46:44,560 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+159659cb-c5e6-40bc-b30b-aef40748238b 2017-09-19 17:00:35,765 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor disconf_demo	rd	1_0_0_0
+159659cb-c5e6-40bc-b30b-aef40748238b 2017-09-19 17:00:35,788 [proScheduler-1] INFO  com.baidu.disconf.web.tasks.impl.ConfigConsistencyMonitorServiceImpl - monitor vacomall	local	1.0.0
+b39e3dec-3291-4907-ae94-e4b93beac910 2017-09-19 17:00:46,455 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+3fd2a2ab-1dc9-487a-87a9-1b0bcc509d35 2017-09-19 17:00:46,520 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+b542d15c-9a25-43fa-b4fc-cdda894ede79 2017-09-19 17:00:46,729 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+6a0374ce-c4ba-429c-a3bf-e71a80975651 2017-09-19 17:00:46,805 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+83e90865-bd6d-4a0e-b117-3706610460ce 2017-09-19 17:01:25,581 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+9693eee3-6e2d-40b4-8f65-a8519898f3e8 2017-09-19 17:01:25,650 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+4b5d785b-4fc7-4c44-9f88-5fb7e04a2d2f 2017-09-19 17:01:25,897 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+122ae483-406a-4275-835a-5b09912ffbe1 2017-09-19 17:01:25,992 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+8d44219b-9faa-4ec3-a36c-31432245c164 2017-09-19 17:11:24,215 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+e993c738-15e0-4b43-a392-d41ddc389960 2017-09-19 17:11:24,291 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+c54cf8de-2746-4168-ab45-4be3f89352f3 2017-09-19 17:11:24,543 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+026a7352-0643-4ede-b62c-e5f31a8156d4 2017-09-19 17:11:24,619 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+93e24e99-13d5-4878-91c8-3fab1903f615 2017-09-19 17:12:33,758 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+4ac9725c-e444-4ee3-967c-f1c73dd88c73 2017-09-19 17:12:33,821 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+cd560eba-5ac5-4682-b7d0-855854d99962 2017-09-19 17:12:34,014 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+214e1c0c-4e58-4f9d-ae93-3d4dc12b1b06 2017-09-19 17:12:34,093 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+917b70cb-d959-40e2-9952-fc0e05121a99 2017-09-19 17:14:37,408 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+bf280c5e-1f9b-4fd6-9366-8d3d2639fe81 2017-09-19 17:14:37,468 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+ad17ba18-4800-4897-a3a2-782fd3d323a0 2017-09-19 17:14:37,737 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+272a7cda-4dbd-484b-9402-4ebe98194917 2017-09-19 17:14:37,910 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+b0164c29-ad06-4684-94bd-4dfa4bea6fe3 2017-09-19 17:14:49,723 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+b6c145b8-1f5f-4110-adeb-3f032bf78b73 2017-09-19 17:14:49,777 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+6effe764-195a-4b18-9dd6-c5b6bb95062e 2017-09-19 17:14:50,029 [http-nio-8015-exec-3] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+d7051f0a-0c16-4364-8205-5e724f00d2c4 2017-09-19 17:14:50,104 [http-nio-8015-exec-4] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+fd1aab02-5136-4721-9465-f3572f357bf3 2017-09-19 17:25:37,758 [http-nio-8015-exec-5] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+40c6e107-bec7-41a3-acce-1b06d8a82412 2017-09-19 17:25:37,817 [http-nio-8015-exec-6] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+13e8ba7b-8fb2-4f47-8e43-9f157b6e7e21 2017-09-19 17:25:38,060 [http-nio-8015-exec-7] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+1e442a6a-aa55-40f2-b77e-1b19a707ce55 2017-09-19 17:25:38,140 [http-nio-8015-exec-8] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+e4073446-6e4d-4bbe-a1e0-eea769c532ff 2017-09-19 17:26:12,519 [http-nio-8015-exec-9] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/hosts
+8d79adc4-80b9-4702-9c86-39261664b88b 2017-09-19 17:26:12,576 [http-nio-8015-exec-10] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/zoo/prefix
+facdcd99-242a-41b4-8e33-61fc0c2adf47 2017-09-19 17:26:12,864 [http-nio-8015-exec-1] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
+7516ebb0-a185-417a-913e-0cec384ca0d0 2017-09-19 17:26:12,977 [http-nio-8015-exec-2] INFO  com.baidu.dsp.common.interceptor.login.LoginInterceptor - /api/config/file
